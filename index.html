@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healio | Human &amp; Pet Care, Closer to Home</title>
+  <meta name="description" content="Explore human and pet care essentials, compare sample prices, and prepare a doctor request. Healio is building toward medicine delivery and doctor assignment in 10 minutes.">
+  <meta name="theme-color" content="#0c3967">
+  <link rel="icon" href="Images/Logo.png">
+  <link rel="preload" as="image" href="Images/healio-clinic-background.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="experience.css">
+  <link rel="stylesheet" href="commerce.css">
+  <script src="experience.js" defer></script>
+  <script src="catalogue.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="motion.js" defer></script>
+  <script src="reels.js" defer></script>
+  <link rel="stylesheet" href="upgrade.css">
+  <script src="care.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="intro-screen" id="healio-intro" role="dialog" aria-modal="true" aria-labelledby="intro-title" hidden>
+    <div class="intro-background" aria-hidden="true"></div>
+    <div class="intro-top"><span class="intro-edition">CARE, CLOSER TO HOME.</span><button class="intro-skip" type="button" id="intro-skip">Skip intro <span aria-hidden="true">↗</span></button></div>
+    <div class="intro-scene">
+      <p class="intro-eyebrow">EVERY LIFE. EVERY MINUTE.</p>
+      <h2 id="intro-title" class="intro-wordmark"><span class="visually-hidden">Healio</span>
+        <svg viewBox="0 0 1240 440" fill="none" aria-hidden="true" class="healio-drawn-name">
+          <g class="intro-lettering" stroke="currentColor" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+            <path class="intro-glyph" pathLength="1" d="M70 120V345M70 235H220M220 120V345"/>
+            <path class="intro-glyph" pathLength="1" d="M315 270H475C475 218 445 190 401 190C350 190 315 222 315 270C315 318 350 350 401 350C432 350 456 340 474 322"/>
+            <path class="intro-glyph" pathLength="1" d="M665 270C665 223 636 190 590 190C544 190 510 223 510 270C510 317 544 350 590 350C636 350 665 317 665 270M665 190V350"/>
+            <path class="intro-glyph" pathLength="1" d="M755 120V345H782"/>
+            <path class="intro-glyph" pathLength="1" d="M855 205V345M855 145V147"/>
+            <path class="intro-glyph" pathLength="1" d="M1095 270C1095 223 1062 190 1015 190C968 190 935 223 935 270C935 317 968 350 1015 350C1062 350 1095 317 1095 270Z"/>
+          </g>
+          <path class="intro-name-cross" pathLength="1" d="M1170 160V220M1140 190H1200" stroke="#c0e3ff" stroke-width="14" stroke-linecap="square"/>
+          <path class="intro-name-rule" pathLength="1" d="M70 410H1200" stroke="#c0e3ff" stroke-width="2"/>
+          <g class="intro-capsule-symbol" stroke="#c0e3ff" stroke-width="2"><rect x="1127" y="45" width="34" height="74" rx="17"/><path d="M1127 82H1161"/></g>
+        </svg>
+      </h2>
+      <p class="intro-promise">Medicine. Doctors. Human <span>+</span> pet care.</p>
+    </div>
+    <div class="intro-bottom"><span>10 MINUTES. EVERY LIFE.</span><span class="intro-progress" aria-hidden="true"><span></span></span><span>CARE FOR THE WHOLE FAMILY.</span></div>
+  </div>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>
+
+
+  <header class="site-header">
+    <div class="announcement-bar"><span>FOR YOU. FOR YOUR PETS.</span><span>ONE HOME FOR CARE. A 10-MINUTE AMBITION.</span><span>THE HEALIO VISION ↗</span></div>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#main-content" class="header-brand" aria-label="Healio home"><img src="Images/Logo.png" alt="" width="40" height="40"><span class="brand-name">healio<span>+</span></span></a>
+      <div class="header-menu"><a href="#catalogue">Shop essentials</a><a href="#features">Our approach</a><a href="#behind">Care &amp; trust</a><button type="button" data-open="doctor-panel">Talk to a doctor ↗</button></div>
+      <div class="header-actions"><button class="icon-button" type="button" data-action="search" aria-label="Search products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></button><button class="cart-trigger" type="button" data-open="cart-panel" aria-label="Open shopping cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 8h16l-1.5 13h-13Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg><span class="cart-label">Your bag</span><span class="cart-count" data-cart-count>0</span></button><button class="icon-button mobile-menu-toggle" type="button" data-open="mobile-panel" aria-label="Open navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
+    </nav>
+  </header>
+  <main id="main-content">
+<div class="omni-landing-wrapper">
+  <section class="omni-hero" aria-label="Healio Healthcare Hero Section">
+    <div class="hero-atmosphere" aria-hidden="true"><div class="hero-background"></div><span class="hero-coordinate coordinate-left">HUMAN + PET CARE / 001</span><span class="hero-coordinate coordinate-right">10 MINUTES. EVERY LIFE.</span></div>
+    <span class="visually-hidden">Healio Healthcare Commerce — Everyday healthcare essentials, genuine medicines, verified prescriptions, and prompt delivery.</span>
+    <div class="omni-hero-content">
+      <div class="omni-logo-icon">
+        <img src="Images/Logo.png" alt="Healio" width="56" height="56" />
+      </div>
+
+      <p class="omni-subtitle">EVERY LIFE. EVERY MINUTE.</p>
+
+      <h1 class="omni-title-group">
+        <span class="title-line-1">CARE CAN’T</span>
+        <span class="title-line-2">WAIT.</span>
+        <span class="title-line-3">10 MINUTES.</span>
+      </h1>
+      <p class="hero-description">Medicines for you and your pets. A doctor assigned in 10 minutes.<br>Because the ones you love shouldn’t have to wait.</p>
+      <div class="hero-care-paths"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7Z"/></svg> HUMAN CARE</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="6" cy="8" rx="2.5" ry="3.5"/><ellipse cx="12" cy="5" rx="2.5" ry="3.5"/><ellipse cx="18" cy="8" rx="2.5" ry="3.5"/><path d="M6 18c0-3 4-8 6-8s6 5 6 8c0 5-4 2-6 2s-6 3-6-2Z"/></svg> PET CARE</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C9 18 2 13 2 8a5 5 0 0 1 10-1A5 5 0 0 1 22 8c0 5-7 10-10 13Z"/></svg> DOCTOR ASSIGNMENT</span></div>
+      <div class="hero-actions"><a class="care-button" href="#catalogue">Shop the essentials ↗</a><button class="care-button secondary" type="button" data-open="doctor-panel">Talk to a doctor ↗</button></div>
+      <p class="concept-note">The 10-minute ambition. A concept in the making.</p>
+      <button class="hero-intro-replay" data-intro-replay type="button" aria-controls="healio-intro"><span aria-hidden="true">↻</span> Replay the opening</button>
+    </div>
+
+    <div class="omni-visuals">
+      <img src="Images/capsule-hero-v2.png" alt="Healio blue and clear capsule" class="omni-paddle-img" width="450" height="675" fetchpriority="high" decoding="sync">
+
+      <a class="omni-explore" href="#features">
+        <span class="explore-title"><strong class="patrol-semantic-bold">MEET HEALIO</strong></span>
+        <span class="explore-subtitle"><strong class="patrol-semantic-bold">A new rhythm of care.</strong></span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 50" fill="none" aria-hidden="true" focusable="false">
+          <path d="M6.6569 49.7071C7.04743 50.0976 7.68059 50.0976 8.07112 49.7071L14.4351 43.3431C14.8256 42.9526 14.8256 42.3195 14.4351 41.9289C14.0446 41.5384 13.4114 41.5384 13.0209 41.9289L7.36401 47.5858L1.70716 41.9289C1.31663 41.5384 0.683468 41.5384 0.292944 41.9289C-0.0975804 42.3195 -0.0975804 42.9526 0.292944 43.3431L6.6569 49.7071ZM7.36401 0L6.36401 -4.37114e-08L6.36401 49L7.36401 49L8.36401 49L8.36401 4.37114e-08L7.36401 0Z" fill="white"></path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="omni-banner-scroll">
+      <div class="omni-banner-track">
+        <img src="Images/HealioBanner.svg" alt="Healio Discovery, Genuine Sourcing, Pharmacist Check, Prompt Care" width="738" height="50" decoding="async">
+        <img src="Images/HealioBanner.svg" alt="Healio Discovery, Genuine Sourcing, Pharmacist Check, Prompt Care" width="738" height="50" aria-hidden="true" decoding="async">
+        <img src="Images/HealioBanner.svg" alt="Healio Discovery, Genuine Sourcing, Pharmacist Check, Prompt Care" width="738" height="50" aria-hidden="true" decoding="async">
+        <img src="Images/HealioBanner.svg" alt="Healio Discovery, Genuine Sourcing, Pharmacist Check, Prompt Care" width="738" height="50" aria-hidden="true" decoding="async">
+      </div>
+      <button class="omni-banner-pause-btn" aria-label="Pause scrolling banner" aria-pressed="false" data-title="Banner_Pause_Toggle">
+        ❚❚
+      </button>
+    </div>
+  </section>
+
+  <div class="omni-bottom-shared-bg">
+    <section id="features" class="omni-features-section" aria-label="Healio Core Pillars">
+      <div class="omni-features-left">
+        <div class="omni-features-left-content" id="services">
+          <div class="chapter-index" aria-hidden="true"><div class="chapter-number-window"><div class="chapter-number-track"><span>01</span><span>02</span><span>03</span></div></div><span class="chapter-total">/ 03</span></div>
+          <h2 class="versatility-title">
+            <span class="versatility-word">FOR PEOPLE. FOR PETS.</span>
+            <span class="to-word">AT YOUR</span> <span class="win-word">DOORSTEP</span>
+          </h2>
+          <div class="versatility-desc">
+            <p>When someone you love needs care, every minute feels longer.</p>
+            <p>Medicines for humans and pets, brought closer to home. A doctor assigned in 10 minutes. One place for the whole family.</p>
+            <p>That’s the future we’re building with Healio.</p>
+          </div>
+        </div>
+        <div class="reel-controls"><button type="button" data-reel-shift="-1" aria-label="Previous care chapter">↑</button><button type="button" data-reel-shift="1" aria-label="Next care chapter">↓</button><p class="reel-status visually-hidden" role="status"></p></div>
+        <img src="Images/capsule-hero-v2.png" alt="Healio blue and clear capsule" class="omni-features-mini-paddle" aria-hidden="true" width="150" height="225" decoding="async">
+      </div>
+
+      <div class="omni-features-right">
+        <article class="omni-feature-item">
+          <picture class="omni-feature-paddle-picture"><img src="Images/illustrations/family-care.svg" alt="Illustration of a person, a dog, and a medicine delivery bag" class="omni-feature-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
+          <div class="omni-feature-text-block"><p class="story-kicker">01 / MEDICINES FOR EVERY LIFE</p><h3 class="omni-feature-title">HUMANS.<br>PETS. FAMILY.</h3><p class="omni-feature-desc">Everyday medicines and essentials for you and your four-legged companions. One home for everyone’s care.</p></div>
+        </article>
+        <article class="omni-feature-item" id="doctors">
+          <picture class="omni-feature-paddle-picture"><img src="Images/illustrations/doctor-access.svg" alt="Illustration of a doctor on a phone screen beside a clock" class="omni-feature-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
+          <div class="omni-feature-text-block"><p class="story-kicker">02 / A LITTLE EXPERT GUIDANCE</p><h3 class="omni-feature-title">A DOCTOR.<br>10 MINUTES.</h3><p class="omni-feature-desc">Our goal: assign a doctor in 10 minutes, so you can take the next step with a little more reassurance.</p></div>
+        </article>
+        <article class="omni-feature-item">
+          <picture class="omni-feature-paddle-picture"><img src="Images/illustrations/medicine-delivery.svg" alt="Illustration of a local medicine courier cycling to a doorstep" class="omni-feature-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
+          <div class="omni-feature-text-block"><p class="story-kicker">03 / CLOSER TO YOUR DOOR</p><h3 class="omni-feature-title">LESS WAIT.<br>MORE CARE.</h3><p class="omni-feature-desc">From your neighborhood pharmacy to your front door. Medicine delivery built around a 10-minute goal.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="behind" class="omni-behind-section" aria-label="Behind the Healio Difference">
+      <div class="omni-behind-left">
+        <article class="omni-behind-item">
+          <picture class="omni-behind-paddle-picture"><img src="Images/illustrations/prescription-check.svg" alt="Illustration of a checked prescription and sealed medicine strip" class="omni-behind-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
+          <div class="omni-behind-text-block"><p class="story-kicker">01 / THE RIGHT SOURCE</p><h3 class="omni-behind-item-title">GENUINE<br>MEDICINES.</h3><p class="omni-behind-item-desc">Our approach starts with licensed pharmacy partners, clear batch details, and expiry checks.</p></div>
+        </article>
+        <article class="omni-behind-item">
+          <picture class="omni-behind-paddle-picture"><img src="Images/illustrations/doctor-access.svg" alt="Illustration of a doctor and a clock" class="omni-behind-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
+          <div class="omni-behind-text-block"><p class="story-kicker">02 / THE HUMAN CHECK</p><h3 class="omni-behind-item-title">CHECKED.<br>WITH CARE.</h3><p class="omni-behind-item-desc">Prescription medicines belong in qualified hands. Pharmacist review is part of the journey we’re designing.</p></div>
+        </article>
+        <article class="omni-behind-item">
+          <picture class="omni-behind-paddle-picture"><img src="Images/illustrations/prescription-check.svg" alt="Illustration of prescription review and medicine packaging" class="omni-behind-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
+          <div class="omni-behind-text-block"><p class="story-kicker">03 / CLARITY AT EVERY STEP</p><h3 class="omni-behind-item-title">NO GUESSWORK.<br>NO SURPRISES.</h3><p class="omni-behind-item-desc">Clear pack details, prices, and delivery information before you order. Care should feel simpler.</p></div>
+        </article>
+        <article class="omni-behind-item">
+          <picture class="omni-behind-paddle-picture"><img src="Images/illustrations/family-care.svg" alt="Illustration of human and pet care together" class="omni-behind-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
+          <div class="omni-behind-text-block"><p class="story-kicker">04 / CARE THAT COMES HOME</p><h3 class="omni-behind-item-title">EVERY FAMILY.<br>EVERY DAY.</h3><p class="omni-behind-item-desc">For parents, partners, and little paws. Everyday care that fits around the people and pets you love.</p></div>
+        </article>
+      </div>
+
+      <div class="omni-behind-right">
+        <img src="Images/capsule-hero-v2.png" alt="Healio blue and clear capsule" class="omni-behind-mini-paddle" aria-hidden="true" width="150" height="225" decoding="async">
+        <div class="omni-behind-right-content">
+          <div class="chapter-index" aria-hidden="true"><div class="chapter-number-window"><div class="chapter-number-track"><span>01</span><span>02</span><span>03</span><span>04</span></div></div><span class="chapter-total">/ 04</span></div>
+          <h2 class="behind-title">
+            <span class="behind-small">WHAT POWERS</span>
+            <span class="behind-the">THE</span> <span class="behind-omni">HEALIO</span>
+            <span class="behind-small">DIFFERENCE?</span>
+          </h2>
+          <div class="behind-desc">
+            <p>Speed matters. So does everything that happens before your order reaches the door.</p>
+            <p>Our vision brings licensed pharmacy sourcing, prescription review, and thoughtful local delivery into one care journey.</p>
+            <p>Built for your peace of mind. For every life at home.</p>
+          </div>
+        </div>
+        <div class="reel-controls"><button type="button" data-reel-shift="-1" aria-label="Previous trust chapter">↑</button><button type="button" data-reel-shift="1" aria-label="Next trust chapter">↓</button><p class="reel-status visually-hidden" role="status"></p></div>
+      </div>
+    </section>
+
+
+    <section class="mobile-home" aria-labelledby="mobile-home-title"><div class="mobile-home-top"><span>HEALIO / EVERY LIFE. EVERY MINUTE.</span><button type="button" data-open="cart-panel" aria-label="Open care bag">Bag <span data-cart-count>0</span> ↗</button></div><h1 id="mobile-home-title">A little care.<br>Right here.</h1><p>Human essentials. Happy pets. One care shelf.</p><div class="mobile-service-grid"><button type="button" data-open="doctor-panel"><span>✚</span><strong>A doctor</strong><small>10-minute goal ↗</small></button><button type="button" data-open="prescription-panel"><span>℞</span><strong>Prescription</strong><small>Upload &amp; find ↗</small></button><button type="button" data-open="ambulance-panel"><span>＋</span><strong>Ambulance</strong><small>10-minute goal ↗</small></button></div><p class="mobile-demo">A concept in care. Delivery &amp; dispatch are not live.</p></section>
+    <section class="catalogue-section blue-section" id="catalogue" aria-labelledby="catalogue-title">
+      <div class="section-shell">
+        <header class="shop-heading reveal"><div><p class="eyebrow">01 / YOUR EVERYDAY CARE SHELF</p><h2 id="catalogue-title">Little essentials.<br> For every life.</h2><p>Human medicines, pet care, and the things you’re glad to have at home.</p></div><p class="catalogue-note">30 considered essentials.<br>One place for the whole family.</p></header>
+        <div class="shelf-feature"><div><p class="eyebrow">LESS TYPING. MORE CARE.</p><h3>Your prescription.<br>Your essentials, found.</h3><p>Upload a photo or PDF. Review the matches. Build your bag.</p><button class="care-button" type="button" data-open="prescription-panel">Scan a prescription ↗</button></div><img src="Images/illustrations/prescription-check.svg" width="250" height="180" alt="Prescription and medicine illustration"></div>
+        <div class="catalogue-toolbar">
+          <div class="audience-switch" role="group" aria-label="Choose human or pet care"><span class="switch-thumb" aria-hidden="true"></span><button type="button" data-audience="human" aria-pressed="true">✚ Human care <span>15</span></button><button type="button" data-audience="pet" aria-pressed="false">♧ Pet care <span>15</span></button></div>
+          <label class="catalogue-search"><span class="visually-hidden">Search the current catalogue</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input type="search" id="catalogue-search" placeholder="Search medicines, vitamins, first aid…" autocomplete="off"></label>
+        </div>
+        <div class="catalogue-filter-row"><div class="category-filters" id="category-filters" role="group" aria-label="Filter products by category"></div><label class="sort-control"><span class="visually-hidden">Sort products</span><select id="catalogue-sort"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name: A–Z</option></select></label></div>
+        <div class="catalogue-meta"><p id="catalogue-count">15 essentials for human care</p><p>Demo catalogue · Illustrative packaging and prices</p></div>
+        <div class="product-grid" id="product-grid" aria-label="Products"></div>
+        <p class="visually-hidden" id="catalogue-status" role="status"></p>
+        <noscript><p class="empty-results">Enable JavaScript to browse the catalogue and use the cart.</p></noscript>
+      </div>
+    </section>
+
+    <section class="product-detail-section blue-section" id="pdp" aria-labelledby="detail-name">
+      <div class="section-shell">
+        <header class="detail-heading reveal"><div><p class="eyebrow">02 / A CLOSER LOOK</p><h2>Your next essential.</h2></div><a href="#catalogue" class="text-link">Back to the shelf ↑</a></header>
+        <div class="product-detail" id="product-detail"></div>
+      </div>
+    </section>
+    <section id="inside" class="omni-inside-section" aria-labelledby="inside-title">
+      <header class="inside-heading"><p class="story-kicker">A CLOSER LOOK</p><h2 id="inside-title">INSIDE THE CARE.</h2><p>There’s more to fast delivery than the last ten minutes.</p></header>
+      <div class="inside-story-grid"><div class="inside-capsule-view"><img src="Images/capsule-hero-v2.png" alt="A detailed blue and clear capsule containing ivory pellets" width="1024" height="1536" loading="lazy"><span class="inside-detail detail-one">01 / THE RIGHT MEDICINE</span><span class="inside-detail detail-two">02 / THE RIGHT CHECKS</span><span class="inside-detail detail-three">03 / HANDLED WITH CARE</span></div><div class="inside-principles"><p class="story-kicker">THOUGHTFUL FROM THE START</p><h3>FAST.<br>WITHOUT<br>THE GUESSWORK.</h3><p>Our delivery goal starts with the essentials: the right medicine, a prescription check where needed, clear pricing, and a carefully packed order.</p><div class="inside-facts"><div><strong>10 min</strong><span>Medicine delivery goal</span></div><div><strong>10 min</strong><span>Doctor assignment goal</span></div><div><strong>One home</strong><span>For human &amp; pet care</span></div></div><p class="concept-note">A concept in development. The capsule is a brand visual.</p></div></div>
+      <div class="inside-family-row"><img src="Images/illustrations/family-care.svg" alt="Illustration of a person and their dog with a medicine bag" width="960" height="720" loading="lazy"><div><p class="story-kicker">ALL YOUR LOVED ONES</p><h3>THE WHOLE<br>FAMILY. COVERED.</h3><p>Because care doesn’t stop at people. A simpler everyday experience for you, your family, and your pets.</p><a class="care-button secondary" href="#features">Explore the care journey ↗</a></div></div>
+    </section>
+
+    <section id="gallery" class="omni-image-gallery" aria-label="Care for people and pets, in pictures">
+      <div class="gallery-col col-1"><img src="Images/illustrations/family-care.svg" alt="Human and pet care illustration" width="960" height="720" loading="lazy" decoding="async"><img src="Images/illustrations/prescription-check.svg" alt="Prescription check illustration" width="960" height="720" loading="lazy" decoding="async"></div>
+      <div class="gallery-col col-2"><img src="Images/illustrations/doctor-access.svg" alt="Doctor access illustration" width="960" height="720" loading="lazy" decoding="async"><img src="Images/illustrations/medicine-delivery.svg" alt="Medicine delivery illustration" width="960" height="720" loading="lazy" decoding="async"></div>
+      <div class="gallery-col col-3"><img src="Images/illustrations/prescription-check.svg" alt="Prescription check illustration" width="960" height="720" loading="lazy" decoding="async"><img src="Images/illustrations/family-care.svg" alt="Human and pet care illustration" width="960" height="720" loading="lazy" decoding="async"></div>
+      <div class="gallery-col col-4"><img src="Images/illustrations/medicine-delivery.svg" alt="Medicine delivery illustration" width="960" height="720" loading="lazy" decoding="async"><img src="Images/illustrations/doctor-access.svg" alt="Doctor access illustration" width="960" height="720" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section id="omni-court-sequence" class="omni-court-sequence" aria-label="Four stages of the planned Healio care journey">
+      <div class="omni-court-container">
+        <div class="care-sequence-frame is-active" data-frame="0" aria-hidden="false"><img class="omni-court-img omni-court-img-1" src="Images/illustrations/family-care.svg" alt="" width="960" height="720" loading="lazy"><div class="sequence-caption"><p class="story-kicker">01 / DISCOVER</p><h2>CARE BEGINS<br>WITH YOU.</h2><p>Human medicines. Pet essentials. One place to start.</p></div></div>
+        <div class="care-sequence-frame" data-frame="1" aria-hidden="true"><img class="omni-court-img omni-court-img-2" src="Images/illustrations/doctor-access.svg" alt="" width="960" height="720" loading="lazy"><div class="sequence-caption"><p class="story-kicker">02 / CONNECT</p><h2>THE NEXT STEP.<br>A LITTLE CLEARER.</h2><p>A doctor assigned in 10 minutes is our goal.</p></div></div>
+        <div class="care-sequence-frame" data-frame="2" aria-hidden="true"><img class="omni-court-img omni-court-img-3" src="Images/illustrations/prescription-check.svg" alt="" width="960" height="720" loading="lazy"><div class="sequence-caption"><p class="story-kicker">03 / CHECK & PACK</p><h2>EVERY DETAIL.<br>HANDLED WITH CARE.</h2><p>Pharmacy review. Thoughtful packing. Ready for your door.</p></div></div>
+        <div class="care-sequence-frame" data-frame="3" aria-hidden="true"><img class="omni-court-img omni-court-img-4" src="Images/illustrations/medicine-delivery.svg" alt="" width="960" height="720" loading="lazy"><div class="sequence-caption"><p class="story-kicker">04 / AT YOUR DOOR</p><h2>10 MINUTES.<br>CLOSER TO CARE.</h2><p>The speed of quick commerce. Built around the ones you love.</p></div></div>
+        <div class="sequence-progress" aria-hidden="true"><span class="is-active"></span><span></span><span></span><span></span></div>
+        <p class="sequence-hint">SCROLL TO FOLLOW THE JOURNEY <span aria-hidden="true">↓</span></p>
+      </div>
+    </section>
+  </div>
+</div>
+  </main>
+
+  <footer class="care-footer">
+    <div class="footer-top section-shell"><a href="#main-content" class="footer-brand">healio<span>+</span></a><p>For you. For your pets.<br>For every minute that matters.</p><button class="care-button secondary" type="button" data-open="doctor-panel">A little expert guidance ↗</button></div>
+    <nav class="section-shell" aria-label="Footer"><a href="#catalogue">Shop human &amp; pet care</a><a href="#behind">Our approach</a><a href="#inside">Inside the care</a><button class="intro-replay" type="button" id="intro-replay" aria-controls="healio-intro">Replay the opening ↗</button></nav>
+    <div class="footer-bottom section-shell"><p>© <span id="current-year">2026</span> Healio. Made with care.</p><p>Concept prototype. Prices are samples; delivery and consultations are not live.</p></div>
+  </footer>
+  <button class="doctor-rail" type="button" data-open="doctor-panel"><span class="doctor-rail-icon" aria-hidden="true">✚</span><span>Talk to a doctor<small>For humans &amp; pets</small></span><span aria-hidden="true">↗</span></button>
+  <div class="care-rail"><button type="button" data-open="prescription-panel" aria-label="Scan prescription">℞ <span>Prescription</span></button><button type="button" data-open="ambulance-panel" aria-label="Ambulance request">✚ <span>Ambulance</span></button><button type="button" data-open="chat-panel" aria-label="Chat with Healio assistant">✧ <span>Ask Healio</span></button></div>
+  <nav class="mobile-dock" aria-label="Shopping navigation"><a href="#main-content">⌂<span>Home</span></a><button type="button" data-action="search">⌕<span>Search</span></button><button type="button" data-open="cart-panel">♧<span>Bag <b data-cart-count>0</b></span></button><button type="button" data-open="chat-panel">✧<span>Help</span></button></nav>
+  <div class="toast" id="app-toast" role="status" aria-live="polite"></div>
+
+  <dialog class="side-panel" id="cart-panel" aria-labelledby="cart-title">
+    <header class="panel-header"><div><p class="eyebrow">A LITTLE CLOSER TO CARE</p><h2 id="cart-title">Your care bag <span data-cart-count>0</span></h2></div><button class="close-button" type="button" data-close aria-label="Close shopping cart">×</button></header>
+    <div id="cart-content" class="panel-content"></div>
+    <form id="checkout-form" class="panel-content checkout-form" hidden>
+      <button class="text-link" type="button" data-action="back-to-bag">← Back to your bag</button><h3>Where should care find you?</h3><p class="form-intro">Prepare a demo order. No payment is taken and no real order is placed.</p>
+      <label>Full name<input name="name" autocomplete="name" required maxlength="60"></label>
+      <div class="form-row"><label>Mobile number<input name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" pattern="[0-9]{10}" placeholder="10-digit mobile" required></label><label>Pincode<input name="pincode" inputmode="numeric" autocomplete="postal-code" pattern="[1-9][0-9]{5}" placeholder="6-digit pincode" required></label></div>
+      <label>Delivery address<textarea name="address" autocomplete="street-address" required minlength="10" maxlength="350" rows="3"></textarea></label>
+      <label id="checkout-rx-field" hidden>Veterinary prescription<input name="prescription" type="file" accept="image/jpeg,image/png,application/pdf"><small>Required for items marked “Vet Rx”. JPEG, PNG or PDF, up to 5 MB. Kept in this page only.</small></label>
+      <label class="check-label"><input name="consent" type="checkbox" required><span>I understand this is a demo order and the shown prices are illustrative.</span></label>
+      <p class="form-error" id="checkout-error" role="alert"></p><button class="care-button" type="submit">Prepare demo order ↗</button>
+    </form>
+    <div id="order-confirmation" class="panel-content confirmation" hidden></div>
+  </dialog>
+
+  <dialog class="side-panel doctor-panel" id="doctor-panel" aria-labelledby="doctor-title">
+    <header class="panel-header"><div><p class="eyebrow">THE NEXT STEP, TOGETHER</p><h2 id="doctor-title">Let’s find your care.</h2></div><button class="close-button" type="button" data-close aria-label="Close doctor request">×</button></header>
+    <form id="doctor-form" class="panel-content">
+      <div class="consult-banner"><span aria-hidden="true">10</span><div><strong>Minutes is the assignment goal.</strong><p>Start with a few details about who needs care.</p></div></div>
+      <fieldset class="consult-type"><legend>Who is this for?</legend><label><input type="radio" name="care" value="human" checked><span>✚ A person</span></label><label><input type="radio" name="care" value="pet"><span>♧ A pet</span></label></fieldset>
+      <label><span id="patient-name-label">Patient name</span><input name="patient" required maxlength="60" autocomplete="off"></label>
+      <div class="form-row"><label>Age in years<input name="age" type="number" min="0" max="120" step="0.1" required></label><label>Mobile number<input name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" pattern="[0-9]{10}" placeholder="10-digit mobile" required></label></div>
+      <div class="pet-fields" id="doctor-pet-fields" hidden><div class="form-row"><label>Pet species<select name="species"><option value="">Choose species</option><option value="Dog">Dog</option><option value="Cat">Cat</option><option value="Other companion animal">Other companion animal</option></select></label><label>Pet parent’s name<input name="owner" maxlength="60" autocomplete="name"></label></div></div>
+      <div class="form-row"><label>Care team<select name="specialty" id="doctor-specialty"><option>General physician</option><option>Family care physician</option></select></label><label>Pincode<input name="pincode" inputmode="numeric" pattern="[1-9][0-9]{5}" placeholder="6-digit pincode" required></label></div>
+      <label>What would you like help with?<textarea name="concern" rows="4" required minlength="10" maxlength="1000" placeholder="Tell us a little about the concern…"></textarea></label>
+      <label class="check-label"><input name="consent" type="checkbox" required><span>I understand this prepares a demo request. No live clinician is contacted.</span></label>
+      <p class="form-error" id="doctor-error" role="alert"></p><button type="submit" class="care-button">Prepare consultation request ↗</button><p class="form-footnote">This form is for a concept demonstration. For urgent or emergency concerns, seek immediate local care.</p>
+    </form>
+    <div id="doctor-confirmation" class="panel-content confirmation" hidden></div>
+  </dialog>
+
+  <dialog class="side-panel mobile-nav-drawer" id="mobile-panel" aria-labelledby="mobile-title"><header class="panel-header"><h2 id="mobile-title">Explore Healio</h2><button class="close-button" type="button" data-close aria-label="Close navigation">×</button></header><nav class="panel-content mobile-links" aria-label="Mobile navigation"><a href="#catalogue" data-close>Shop essentials ↗</a><a href="#features" data-close>Our approach ↗</a><a href="#behind" data-close>Care &amp; trust ↗</a><button type="button" data-open="doctor-panel">Talk to a doctor ↗</button><button type="button" data-open="cart-panel">Your care bag ↗</button></nav></dialog>
+<dialog class="side-panel" id="chat-panel" aria-labelledby="chat-title"><header class="panel-header"><div><p class="eyebrow">A LITTLE HELP, RIGHT HERE</p><h2 id="chat-title">Ask Healio.</h2></div><button class="close-button" type="button" data-close aria-label="Close chat">×</button></header><div class="panel-content ai-content"><p class="form-intro">Your AI shopping guide. For product and service questions, not diagnosis or dosing. Messages are sent to Google Gemini.</p><div id="chat-messages" class="chat-messages" role="log" aria-live="polite"><p class="chat-bubble">Hi, I’m Healio’s care shelf assistant. What can I help you find?</p></div><form id="chat-form"><label for="chat-question">Your question</label><div class="chat-input"><input id="chat-question" maxlength="1500" required placeholder="Find vitamins, pet care…" autocomplete="off"><button class="care-button" type="submit" aria-label="Send message">↗</button></div></form><p id="chat-error" class="form-error" role="alert"></p></div></dialog>
+<dialog class="side-panel" id="prescription-panel" aria-labelledby="rx-title"><header class="panel-header"><div><p class="eyebrow">FROM PAPER TO YOUR CARE BAG</p><h2 id="rx-title">Read. Review. Ready.</h2></div><button class="close-button" type="button" data-close aria-label="Close prescription reader">×</button></header><div class="panel-content"><form id="rx-form"><p class="form-intro">Upload your doctor’s prescription. We’ll read the medicine names and written quantities, then look for exact matches in our demo shelf.</p><label>Care for<select name="audience"><option value="human">A person</option><option value="pet">A pet</option></select></label><label class="upload-zone">℞ &nbsp; Add a prescription<input name="file" type="file" accept="image/jpeg,image/png,application/pdf" required><small>Clear photo or PDF · Up to 3 MB</small></label><label class="check-label"><input name="consent" type="checkbox" required><span>I agree to send this prescription to Google Gemini for reading. Files aren’t saved by this app. Remove personal details you don’t need to share.</span></label><button type="submit" class="care-button">Read prescription ↗</button><p class="form-footnote">AI can misread handwriting. Check every name, strength and quantity against the original. This does not replace pharmacist review.</p></form><p id="rx-error" class="form-error" role="alert"></p><div id="rx-results" hidden><h3>Your prescription, unpacked.</h3><p>Only exact catalogue matches can be selected. Quantities are packs; never doses.</p><div id="rx-items"></div><p id="rx-notes"></p><label class="check-label"><input id="rx-reviewed" type="checkbox"><span>I checked the names, strengths and pack quantities against my prescription.</span></label><button id="rx-add" type="button" class="care-button">Add selected matches to bag ↗</button><p id="rx-add-status" role="status"></p></div></div></dialog>
+<dialog class="side-panel" id="ambulance-panel" aria-labelledby="ambulance-title"><header class="panel-header"><div><p class="eyebrow">WHEN EVERY MINUTE MATTERS</p><h2 id="ambulance-title">Help on the way.<br>That’s the ambition.</h2></div><button class="close-button" type="button" data-close aria-label="Close ambulance request">×</button></header><div class="panel-content"><a class="emergency-call" href="tel:112">Emergency now? Call 112 ↗</a><p class="form-intro">In India, 112 connects emergency assistance, including ambulance services. <a href="https://112.gov.in/faq" target="_blank" rel="noopener">About 112 ↗</a></p><div class="consult-banner"><span>10</span><div><strong>Minutes is our arrival goal.</strong><p>Concept only. No ambulance can be dispatched here. Don’t wait for this form in an emergency.</p></div></div><form id="ambulance-form"><label>Patient name<input name="patient" required minlength="2" maxlength="60"></label><label>Contact number<input name="phone" type="tel" pattern="[0-9]{10}" inputmode="numeric" placeholder="10-digit mobile" required></label><label>Pickup address &amp; landmark<textarea name="address" required minlength="10" maxlength="350" rows="3"></textarea></label><label>Pincode<input name="pincode" pattern="[1-9][0-9]{5}" inputmode="numeric" required></label><label class="check-label"><input type="checkbox" required><span>I understand this is a demo. No ambulance or emergency team is contacted.</span></label><button class="care-button" type="submit">Prepare demo request ↗</button></form><div id="ambulance-result" role="status" hidden></div></div></dialog>
+</body>
+</html>

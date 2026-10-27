@@ -1,0 +1,63 @@
+/* SVG opening, small hero entrances and reading progress. */
+.reading-progress { position: fixed; inset: 0 0 auto; height: 2px; z-index: 1100; pointer-events: none; }
+.reading-progress span { display: block; width: 100%; height: 100%; background: #90d4ff; transform: scaleX(0); transform-origin: left; }
+/* SVG wordmark opening: the name is the focal point throughout. */
+.intro-screen[hidden] { display: none !important; }
+.intro-screen { position: fixed; inset: 0; z-index: 10000; overflow: hidden; background: #f6faff; color: #173e66; font-family: 'Space Grotesk', sans-serif; transition: transform .7s cubic-bezier(.76,0,.24,1), visibility .7s; }
+.intro-screen.is-leaving { transform: translateY(-101%); visibility: hidden; }
+body.intro-playing { overflow: hidden !important; }
+.intro-background { position: absolute; inset: -12%; background: #174c7b url('Images/healio-clinic-background.png') center / cover; opacity: .8; }
+.intro-top, .intro-bottom { position: absolute; left: 4%; right: 4%; display: flex; justify-content: space-between; align-items: center; gap: 24px; z-index: 2; }
+.intro-top { top: 28px; }
+.intro-edition { font-size: 13px; letter-spacing: .12em; color: #d7eafb; }
+.intro-skip { background: #f6faff; border: 1px solid #1a508560; color: #173e66; padding: 12px 18px; min-height: 48px; font-size: 15px; cursor: pointer; }
+.intro-skip span { margin-left: 22px; color: #246dba; }
+.intro-skip:hover { background: #173e66; color: #f6faff; }
+.intro-skip:focus-visible { outline: 2px solid #246dba; outline-offset: 5px; }
+.intro-scene { position: absolute; inset: 110px 2% 110px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.intro-eyebrow { font-size: clamp(13px, 1.2vw, 18px); color: #d7eafb; letter-spacing: .18em; margin: 0; }
+.intro-wordmark { margin: 0; width: 100%; max-width: 1600px; line-height: 0; }
+.healio-drawn-name { display: block; width: 100%; height: auto; overflow: visible; color: #173e66; }
+.intro-glyph, .intro-name-cross, .intro-name-rule { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.intro-capsule-symbol { transform-origin: 1144px 82px; }
+.intro-promise { font-size: clamp(16px, 1.8vw, 27px); line-height: 1.6; margin: 5px 0 0; letter-spacing: -.02em; color: #f2f9ff; text-align: center; }
+.intro-promise > span { color: #246dba; }
+.intro-bottom { bottom: 30px; font-size: 12px; line-height: 1.8; letter-spacing: .08em; color: #d7eafb; }
+.intro-bottom > span:first-child { color: #173e66; }
+.intro-progress { height: 2px; width: clamp(100px, 22vw, 400px); background: #1a508530; }
+.intro-progress > span { display: block; height: 100%; background: #246dba; transform: scaleX(0); transform-origin: left; }
+.intro-replay { font: 400 13px/1.6 'Space Grotesk', sans-serif; padding: 0; border: 0; background: none; color: #e7f4ff; text-align: left; cursor: pointer; }
+.intro-replay span { margin-left: 8px; color: #246dba; }
+
+.intro-screen { background: #174c7b; color: white; }
+.intro-background { inset: -4%; opacity: 1; }
+.intro-background::after { content: ''; position: absolute; inset: 0; background: #08274e33; }
+.healio-drawn-name { color: white; }
+.intro-name-cross,.intro-name-rule,.intro-capsule-symbol { stroke: #c0e3ff; }
+.intro-skip { color: white; background: #ffffff12; border-color: #e6f4ff80; }
+.intro-skip span,.intro-promise > span { color: #c0e3ff; }
+.intro-skip:hover { background: white; color: #174c7b; }
+.intro-bottom,.intro-bottom > span:first-child { color: #e6f3ff; }
+.intro-progress { background: #e0f0ff50; }.intro-progress > span { background: white; }
+@media (prefers-reduced-motion: no-preference) {
+ .intro-screen.is-playing .intro-glyph { animation: draw-healio 1.7s cubic-bezier(.6,0,.2,1) both; }
+ .intro-glyph:nth-child(2) { animation-delay: .1s !important; }.intro-glyph:nth-child(3) { animation-delay: .2s !important; }.intro-glyph:nth-child(4) { animation-delay: .3s !important; }.intro-glyph:nth-child(5) { animation-delay: .4s !important; }.intro-glyph:nth-child(6) { animation-delay: .5s !important; }
+ .intro-screen.is-playing .intro-name-cross { animation: draw-healio .8s 1.5s both; }.intro-screen.is-playing .intro-name-rule { animation: draw-healio 1s 1.7s both; }.intro-screen.is-playing .intro-capsule-symbol { animation: capsule-mark-turn 2.6s cubic-bezier(.2,.7,.2,1) both; }
+ .intro-screen.is-playing .intro-background { animation: scene-arrive 3s cubic-bezier(.2,.7,.2,1) both; }.intro-screen.is-playing .intro-promise { animation: rise-in .8s 1.4s both; }.intro-screen.is-playing .intro-progress > span { animation: opening-progress 3s linear forwards; }.intro-screen.is-playing { animation: opening-failsafe 4.6s step-end forwards; }
+ body.experience-ready:not(.experience-entered) .omni-hero-content > * { opacity: 0; }
+ body.experience-entered .omni-hero-content > * { animation: rise-in .9s cubic-bezier(.2,.7,.3,1) both; }
+ body.experience-entered .omni-title-group { animation-delay: .15s; }body.experience-entered .hero-description { animation-delay: .3s; }body.experience-entered .hero-care-paths { animation-delay: .4s; }body.experience-entered .hero-actions { animation-delay: .48s; }
+ body.intro-playing:not(.intro-leaving) .capsule-flight { opacity: 0; }body.experience-entered .capsule-flight { transition: opacity .9s; }
+}
+@keyframes draw-healio { from { stroke-dashoffset: 1; }to { stroke-dashoffset: 0; } }
+@keyframes capsule-mark-turn { from { transform: translate(-65px,16px) rotate(-90deg); opacity: 0; }25% { opacity: 1; }to { transform: rotate(35deg); opacity: 1; } }
+@keyframes scene-arrive { from { transform: scale(1.12); }to { transform: scale(1); } }
+@keyframes opening-progress { to { transform: scaleX(1); } }
+@keyframes opening-failsafe { to { visibility: hidden; pointer-events: none; } }
+@media (max-width: 700px) {
+ .intro-top { top: 20px; }.intro-edition { font-size: 11px; max-width: 160px; line-height: 1.7; }.intro-skip { font-size: 14px; padding-inline: 12px; }.intro-skip span { margin-left: 12px; }
+ .intro-scene { inset: 100px 0 120px; }.intro-eyebrow { font-size: 12px; letter-spacing: .13em; }.intro-wordmark { margin: 24px 0; }.intro-promise { font-size: 17px; max-width: 300px; margin-inline: 22px; }
+ .intro-bottom { bottom: 24px; flex-wrap: wrap; gap: 16px; font-size: 11px; }.intro-bottom > span:last-child { display: none; }.intro-progress { width: 100%; order: -1; }.intro-bottom > span:first-child { width: 100%; text-align: center; }
+}
+@media (max-height: 550px) { .intro-scene { inset-block: 64px; }.intro-eyebrow { display: none; }.intro-wordmark { width: min(70vw,760px); margin: 0; }.intro-promise { font-size: 15px; } }
+@media (prefers-reduced-motion: reduce) { .intro-screen { transition: none; }.hero-background { transform: none; }.intro-glyph,.intro-name-cross,.intro-name-rule { stroke-dashoffset: 0; }.reading-progress { display: none; } }

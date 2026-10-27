@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none" role="img" aria-labelledby="title"><title id="title">Prescription review and careful medicine handling</title><rect width="960" height="720" fill="#edf5fd"/>
+<path d="M128 482C113 349 175 181 354 151C573 115 793 266 816 411C838 545 666 577 439 566" fill="#e1eefb"/>
+<g stroke="#244f7a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M245 161H529L579 210V548H245Z" fill="#fff"/>
+ <path d="M529 161V210H579" fill="#b5dfd6"/>
+ <path d="M281 244H311V274H281Z" fill="#246dba" stroke="none"/>
+ <path d="M296 229V289M266 259H326" stroke="#246dba" stroke-width="14"/>
+ <path d="M281 331H303V353H281ZM281 390H303V412H281ZM281 449H303V471H281Z" fill="#b5dfd6" stroke="none"/>
+ <path d="M282 337L290 345L308 326M282 397L290 405L308 386M282 456L290 464L308 445" stroke="#246dba"/>
+ <path d="M336 336H509M336 353H454M336 395H509M336 412H477M336 454H466M336 471H427" stroke="#9cb8d3" stroke-width="4"/>
+ <rect x="538" y="342" width="162" height="214" rx="14" transform="rotate(12 538 342)" fill="#fff"/>
+ <g transform="rotate(12 538 342)" fill="#dcebf8" stroke="#87aed1" stroke-width="3"><rect x="562" y="368" width="43" height="61" rx="21"/><rect x="629" y="368" width="43" height="61" rx="21"/><rect x="562" y="453" width="43" height="61" rx="21"/><rect x="629" y="453" width="43" height="61" rx="21"/></g>
+ <circle cx="657" cy="249" r="68" fill="#b5dfd6"/>
+ <path d="M626 248L649 270L689 224" stroke="#246dba" stroke-width="8"/>
+</g>
+<path d="M156 579H789" stroke="#b7cfe7" stroke-width="3"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none" role="img" aria-labelledby="title"><title id="title">Local medicine delivery to your doorstep</title><rect width="960" height="720" fill="#edf5fd"/>
+<path d="M127 499C113 361 191 228 377 216C543 206 773 242 828 421L813 557H137Z" fill="#e1eefb"/>
+<g stroke="#244f7a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M663 538V174H832V538" fill="#fff"/>
+ <path d="M686 538V202H808V538" fill="#edf5fd"/>
+ <path d="M781 370V399"/>
+ <path d="M649 538H846"/>
+ <circle cx="260" cy="507" r="62" fill="#fff"/><circle cx="566" cy="507" r="62" fill="#fff"/>
+ <circle cx="260" cy="507" r="18" fill="#b5dfd6"/><circle cx="566" cy="507" r="18" fill="#b5dfd6"/>
+ <path d="M260 507L339 374H477L566 507H260Z" fill="#b5dfd6"/>
+ <path d="M339 374L410 507L477 374M477 374L505 328H541"/>
+ <path d="M315 374H371" stroke-width="10"/>
+ <path d="M356 304C365 267 384 248 413 248C447 248 469 272 469 308L455 374H350Z" fill="#246dba" stroke="#246dba"/>
+ <path d="M399 374L455 415L422 470" stroke-width="20"/>
+ <path d="M437 299L473 337H509" stroke="#f4e8db" stroke-width="16"/>
+ <path d="M391 237V218H433V248" fill="#f4e8db"/>
+ <path d="M382 176C382 150 398 135 421 135C444 135 462 152 462 179V199C462 221 445 235 424 235C401 235 382 220 382 199Z" fill="#f4e8db"/>
+ <path d="M370 174C370 140 389 119 420 119C450 119 471 140 471 174H370Z" fill="#fff"/>
+ <path d="M420 120V174M370 174H480"/>
+ <rect x="189" y="295" width="136" height="111" rx="9" fill="#fff"/>
+ <path d="M245 318H267V340H289V362H267V384H245V362H223V340H245Z" fill="#246dba" stroke="none"/>
+ <path d="M127 336H157M98 364H157M122 391H157" stroke="#87b6de" stroke-width="4"/>
+</g>
+<path d="M95 571H853" stroke="#b7cfe7" stroke-width="3"/>
+</svg>
