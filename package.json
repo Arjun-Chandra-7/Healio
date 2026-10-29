@@ -1,12 +1,12 @@
 {
   "name": "healio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
+  "description": "Human and pet care storefront in HTML, CSS and vanilla JavaScript.",
   "scripts": {
     "start": "node server.js",
     "build": "node build.js",
-    "deploy": "node deploy.js",
-    "publish:github": "node publish.js"
+    "test": "node --test"
   },
   "engines": {
     "node": "22.x"

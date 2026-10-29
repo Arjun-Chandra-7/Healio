@@ -1,279 +1,1581 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Healio | Human &amp; Pet Care, Closer to Home</title>
-  <meta name="description" content="Explore human and pet care essentials, compare sample prices, and prepare a doctor request. Healio is building toward medicine delivery and doctor assignment in 10 minutes.">
-  <meta name="theme-color" content="#0c3967">
-  <link rel="icon" href="Images/Logo.png">
-  <link rel="preload" as="image" href="Images/healio-clinic-background.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="experience.css">
-  <link rel="stylesheet" href="commerce.css">
-  <script src="experience.js" defer></script>
-  <script src="catalogue.js" defer></script>
-  <script src="script.js" defer></script>
-  <script src="motion.js" defer></script>
-  <script src="reels.js" defer></script>
-  <link rel="stylesheet" href="upgrade.css">
-  <script src="care.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="intro-screen" id="healio-intro" role="dialog" aria-modal="true" aria-labelledby="intro-title" hidden>
-    <div class="intro-background" aria-hidden="true"></div>
-    <div class="intro-top"><span class="intro-edition">CARE, CLOSER TO HOME.</span><button class="intro-skip" type="button" id="intro-skip">Skip intro <span aria-hidden="true">↗</span></button></div>
-    <div class="intro-scene">
-      <p class="intro-eyebrow">EVERY LIFE. EVERY MINUTE.</p>
-      <h2 id="intro-title" class="intro-wordmark"><span class="visually-hidden">Healio</span>
-        <svg viewBox="0 0 1240 440" fill="none" aria-hidden="true" class="healio-drawn-name">
-          <g class="intro-lettering" stroke="currentColor" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
-            <path class="intro-glyph" pathLength="1" d="M70 120V345M70 235H220M220 120V345"/>
-            <path class="intro-glyph" pathLength="1" d="M315 270H475C475 218 445 190 401 190C350 190 315 222 315 270C315 318 350 350 401 350C432 350 456 340 474 322"/>
-            <path class="intro-glyph" pathLength="1" d="M665 270C665 223 636 190 590 190C544 190 510 223 510 270C510 317 544 350 590 350C636 350 665 317 665 270M665 190V350"/>
-            <path class="intro-glyph" pathLength="1" d="M755 120V345H782"/>
-            <path class="intro-glyph" pathLength="1" d="M855 205V345M855 145V147"/>
-            <path class="intro-glyph" pathLength="1" d="M1095 270C1095 223 1062 190 1015 190C968 190 935 223 935 270C935 317 968 350 1015 350C1062 350 1095 317 1095 270Z"/>
-          </g>
-          <path class="intro-name-cross" pathLength="1" d="M1170 160V220M1140 190H1200" stroke="#c0e3ff" stroke-width="14" stroke-linecap="square"/>
-          <path class="intro-name-rule" pathLength="1" d="M70 410H1200" stroke="#c0e3ff" stroke-width="2"/>
-          <g class="intro-capsule-symbol" stroke="#c0e3ff" stroke-width="2"><rect x="1127" y="45" width="34" height="74" rx="17"/><path d="M1127 82H1161"/></g>
-        </svg>
-      </h2>
-      <p class="intro-promise">Medicine. Doctors. Human <span>+</span> pet care.</p>
-    </div>
-    <div class="intro-bottom"><span>10 MINUTES. EVERY LIFE.</span><span class="intro-progress" aria-hidden="true"><span></span></span><span>CARE FOR THE WHOLE FAMILY.</span></div>
-  </div>
-  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>
+<html lang="en" class=""><head>
+<meta charset="utf-8">
+<title>Healio — A little care. Right when you need it.</title>
+<meta content="Quick commerce for humans and pets. Shop medicines, upload prescriptions, compare prices, request doctor access in 10 minutes, and grow trees with every order." name="description">
 
 
-  <header class="site-header">
-    <div class="announcement-bar"><span>FOR YOU. FOR YOUR PETS.</span><span>ONE HOME FOR CARE. A 10-MINUTE AMBITION.</span><span>THE HEALIO VISION ↗</span></div>
-    <nav class="header-nav" aria-label="Main navigation">
-      <a href="#main-content" class="header-brand" aria-label="Healio home"><img src="Images/Logo.png" alt="" width="40" height="40"><span class="brand-name">healio<span>+</span></span></a>
-      <div class="header-menu"><a href="#catalogue">Shop essentials</a><a href="#features">Our approach</a><a href="#behind">Care &amp; trust</a><button type="button" data-open="doctor-panel">Talk to a doctor ↗</button></div>
-      <div class="header-actions"><button class="icon-button" type="button" data-action="search" aria-label="Search products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></button><button class="cart-trigger" type="button" data-open="cart-panel" aria-label="Open shopping cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 8h16l-1.5 13h-13Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg><span class="cart-label">Your bag</span><span class="cart-count" data-cart-count>0</span></button><button class="icon-button mobile-menu-toggle" type="button" data-open="mobile-panel" aria-label="Open navigation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
-    </nav>
-  </header>
-  <main id="main-content">
-<div class="omni-landing-wrapper">
-  <section class="omni-hero" aria-label="Healio Healthcare Hero Section">
-    <div class="hero-atmosphere" aria-hidden="true"><div class="hero-background"></div><span class="hero-coordinate coordinate-left">HUMAN + PET CARE / 001</span><span class="hero-coordinate coordinate-right">10 MINUTES. EVERY LIFE.</span></div>
-    <span class="visually-hidden">Healio Healthcare Commerce — Everyday healthcare essentials, genuine medicines, verified prescriptions, and prompt delivery.</span>
-    <div class="omni-hero-content">
-      <div class="omni-logo-icon">
-        <img src="Images/Logo.png" alt="Healio" width="56" height="56" />
-      </div>
-
-      <p class="omni-subtitle">EVERY LIFE. EVERY MINUTE.</p>
-
-      <h1 class="omni-title-group">
-        <span class="title-line-1">CARE CAN’T</span>
-        <span class="title-line-2">WAIT.</span>
-        <span class="title-line-3">10 MINUTES.</span>
-      </h1>
-      <p class="hero-description">Medicines for you and your pets. A doctor assigned in 10 minutes.<br>Because the ones you love shouldn’t have to wait.</p>
-      <div class="hero-care-paths"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7Z"/></svg> HUMAN CARE</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="6" cy="8" rx="2.5" ry="3.5"/><ellipse cx="12" cy="5" rx="2.5" ry="3.5"/><ellipse cx="18" cy="8" rx="2.5" ry="3.5"/><path d="M6 18c0-3 4-8 6-8s6 5 6 8c0 5-4 2-6 2s-6 3-6-2Z"/></svg> PET CARE</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C9 18 2 13 2 8a5 5 0 0 1 10-1A5 5 0 0 1 22 8c0 5-7 10-10 13Z"/></svg> DOCTOR ASSIGNMENT</span></div>
-      <div class="hero-actions"><a class="care-button" href="#catalogue">Shop the essentials ↗</a><button class="care-button secondary" type="button" data-open="doctor-panel">Talk to a doctor ↗</button></div>
-      <p class="concept-note">The 10-minute ambition. A concept in the making.</p>
-      <button class="hero-intro-replay" data-intro-replay type="button" aria-controls="healio-intro"><span aria-hidden="true">↻</span> Replay the opening</button>
-    </div>
-
-    <div class="omni-visuals">
-      <img src="Images/capsule-hero-v2.png" alt="Healio blue and clear capsule" class="omni-paddle-img" width="450" height="675" fetchpriority="high" decoding="sync">
-
-      <a class="omni-explore" href="#features">
-        <span class="explore-title"><strong class="patrol-semantic-bold">MEET HEALIO</strong></span>
-        <span class="explore-subtitle"><strong class="patrol-semantic-bold">A new rhythm of care.</strong></span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 50" fill="none" aria-hidden="true" focusable="false">
-          <path d="M6.6569 49.7071C7.04743 50.0976 7.68059 50.0976 8.07112 49.7071L14.4351 43.3431C14.8256 42.9526 14.8256 42.3195 14.4351 41.9289C14.0446 41.5384 13.4114 41.5384 13.0209 41.9289L7.36401 47.5858L1.70716 41.9289C1.31663 41.5384 0.683468 41.5384 0.292944 41.9289C-0.0975804 42.3195 -0.0975804 42.9526 0.292944 43.3431L6.6569 49.7071ZM7.36401 0L6.36401 -4.37114e-08L6.36401 49L7.36401 49L8.36401 49L8.36401 4.37114e-08L7.36401 0Z" fill="white"></path>
-        </svg>
-      </a>
-    </div>
-
-    <div class="omni-banner-scroll">
-      <div class="omni-banner-track">
-        <img src="Images/HealioBanner.svg" alt="Healio Discovery, Genuine Sourcing, Pharmacist Check, Prompt Care" width="738" height="50" decoding="async">
-        <img src="Images/HealioBanner.svg" alt="Healio Discovery, Genuine Sourcing, Pharmacist Check, Prompt Care" width="738" height="50" aria-hidden="true" decoding="async">
-        <img src="Images/HealioBanner.svg" alt="Healio Discovery, Genuine Sourcing, Pharmacist Check, Prompt Care" width="738" height="50" aria-hidden="true" decoding="async">
-        <img src="Images/HealioBanner.svg" alt="Healio Discovery, Genuine Sourcing, Pharmacist Check, Prompt Care" width="738" height="50" aria-hidden="true" decoding="async">
-      </div>
-      <button class="omni-banner-pause-btn" aria-label="Pause scrolling banner" aria-pressed="false" data-title="Banner_Pause_Toggle">
-        ❚❚
-      </button>
-    </div>
-  </section>
-
-  <div class="omni-bottom-shared-bg">
-    <section id="features" class="omni-features-section" aria-label="Healio Core Pillars">
-      <div class="omni-features-left">
-        <div class="omni-features-left-content" id="services">
-          <div class="chapter-index" aria-hidden="true"><div class="chapter-number-window"><div class="chapter-number-track"><span>01</span><span>02</span><span>03</span></div></div><span class="chapter-total">/ 03</span></div>
-          <h2 class="versatility-title">
-            <span class="versatility-word">FOR PEOPLE. FOR PETS.</span>
-            <span class="to-word">AT YOUR</span> <span class="win-word">DOORSTEP</span>
-          </h2>
-          <div class="versatility-desc">
-            <p>When someone you love needs care, every minute feels longer.</p>
-            <p>Medicines for humans and pets, brought closer to home. A doctor assigned in 10 minutes. One place for the whole family.</p>
-            <p>That’s the future we’re building with Healio.</p>
-          </div>
-        </div>
-        <div class="reel-controls"><button type="button" data-reel-shift="-1" aria-label="Previous care chapter">↑</button><button type="button" data-reel-shift="1" aria-label="Next care chapter">↓</button><p class="reel-status visually-hidden" role="status"></p></div>
-        <img src="Images/capsule-hero-v2.png" alt="Healio blue and clear capsule" class="omni-features-mini-paddle" aria-hidden="true" width="150" height="225" decoding="async">
-      </div>
-
-      <div class="omni-features-right">
-        <article class="omni-feature-item">
-          <picture class="omni-feature-paddle-picture"><img src="Images/illustrations/family-care.svg" alt="Illustration of a person, a dog, and a medicine delivery bag" class="omni-feature-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
-          <div class="omni-feature-text-block"><p class="story-kicker">01 / MEDICINES FOR EVERY LIFE</p><h3 class="omni-feature-title">HUMANS.<br>PETS. FAMILY.</h3><p class="omni-feature-desc">Everyday medicines and essentials for you and your four-legged companions. One home for everyone’s care.</p></div>
-        </article>
-        <article class="omni-feature-item" id="doctors">
-          <picture class="omni-feature-paddle-picture"><img src="Images/illustrations/doctor-access.svg" alt="Illustration of a doctor on a phone screen beside a clock" class="omni-feature-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
-          <div class="omni-feature-text-block"><p class="story-kicker">02 / A LITTLE EXPERT GUIDANCE</p><h3 class="omni-feature-title">A DOCTOR.<br>10 MINUTES.</h3><p class="omni-feature-desc">Our goal: assign a doctor in 10 minutes, so you can take the next step with a little more reassurance.</p></div>
-        </article>
-        <article class="omni-feature-item">
-          <picture class="omni-feature-paddle-picture"><img src="Images/illustrations/medicine-delivery.svg" alt="Illustration of a local medicine courier cycling to a doorstep" class="omni-feature-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
-          <div class="omni-feature-text-block"><p class="story-kicker">03 / CLOSER TO YOUR DOOR</p><h3 class="omni-feature-title">LESS WAIT.<br>MORE CARE.</h3><p class="omni-feature-desc">From your neighborhood pharmacy to your front door. Medicine delivery built around a 10-minute goal.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="behind" class="omni-behind-section" aria-label="Behind the Healio Difference">
-      <div class="omni-behind-left">
-        <article class="omni-behind-item">
-          <picture class="omni-behind-paddle-picture"><img src="Images/illustrations/prescription-check.svg" alt="Illustration of a checked prescription and sealed medicine strip" class="omni-behind-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
-          <div class="omni-behind-text-block"><p class="story-kicker">01 / THE RIGHT SOURCE</p><h3 class="omni-behind-item-title">GENUINE<br>MEDICINES.</h3><p class="omni-behind-item-desc">Our approach starts with licensed pharmacy partners, clear batch details, and expiry checks.</p></div>
-        </article>
-        <article class="omni-behind-item">
-          <picture class="omni-behind-paddle-picture"><img src="Images/illustrations/doctor-access.svg" alt="Illustration of a doctor and a clock" class="omni-behind-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
-          <div class="omni-behind-text-block"><p class="story-kicker">02 / THE HUMAN CHECK</p><h3 class="omni-behind-item-title">CHECKED.<br>WITH CARE.</h3><p class="omni-behind-item-desc">Prescription medicines belong in qualified hands. Pharmacist review is part of the journey we’re designing.</p></div>
-        </article>
-        <article class="omni-behind-item">
-          <picture class="omni-behind-paddle-picture"><img src="Images/illustrations/prescription-check.svg" alt="Illustration of prescription review and medicine packaging" class="omni-behind-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
-          <div class="omni-behind-text-block"><p class="story-kicker">03 / CLARITY AT EVERY STEP</p><h3 class="omni-behind-item-title">NO GUESSWORK.<br>NO SURPRISES.</h3><p class="omni-behind-item-desc">Clear pack details, prices, and delivery information before you order. Care should feel simpler.</p></div>
-        </article>
-        <article class="omni-behind-item">
-          <picture class="omni-behind-paddle-picture"><img src="Images/illustrations/family-care.svg" alt="Illustration of human and pet care together" class="omni-behind-paddle" width="960" height="720" loading="lazy" decoding="async"></picture>
-          <div class="omni-behind-text-block"><p class="story-kicker">04 / CARE THAT COMES HOME</p><h3 class="omni-behind-item-title">EVERY FAMILY.<br>EVERY DAY.</h3><p class="omni-behind-item-desc">For parents, partners, and little paws. Everyday care that fits around the people and pets you love.</p></div>
-        </article>
-      </div>
-
-      <div class="omni-behind-right">
-        <img src="Images/capsule-hero-v2.png" alt="Healio blue and clear capsule" class="omni-behind-mini-paddle" aria-hidden="true" width="150" height="225" decoding="async">
-        <div class="omni-behind-right-content">
-          <div class="chapter-index" aria-hidden="true"><div class="chapter-number-window"><div class="chapter-number-track"><span>01</span><span>02</span><span>03</span><span>04</span></div></div><span class="chapter-total">/ 04</span></div>
-          <h2 class="behind-title">
-            <span class="behind-small">WHAT POWERS</span>
-            <span class="behind-the">THE</span> <span class="behind-omni">HEALIO</span>
-            <span class="behind-small">DIFFERENCE?</span>
-          </h2>
-          <div class="behind-desc">
-            <p>Speed matters. So does everything that happens before your order reaches the door.</p>
-            <p>Our vision brings licensed pharmacy sourcing, prescription review, and thoughtful local delivery into one care journey.</p>
-            <p>Built for your peace of mind. For every life at home.</p>
-          </div>
-        </div>
-        <div class="reel-controls"><button type="button" data-reel-shift="-1" aria-label="Previous trust chapter">↑</button><button type="button" data-reel-shift="1" aria-label="Next trust chapter">↓</button><p class="reel-status visually-hidden" role="status"></p></div>
-      </div>
-    </section>
 
 
-    <section class="mobile-home" aria-labelledby="mobile-home-title"><div class="mobile-home-top"><span>HEALIO / EVERY LIFE. EVERY MINUTE.</span><button type="button" data-open="cart-panel" aria-label="Open care bag">Bag <span data-cart-count>0</span> ↗</button></div><h1 id="mobile-home-title">A little care.<br>Right here.</h1><p>Human essentials. Happy pets. One care shelf.</p><div class="mobile-service-grid"><button type="button" data-open="doctor-panel"><span>✚</span><strong>A doctor</strong><small>10-minute goal ↗</small></button><button type="button" data-open="prescription-panel"><span>℞</span><strong>Prescription</strong><small>Upload &amp; find ↗</small></button><button type="button" data-open="ambulance-panel"><span>＋</span><strong>Ambulance</strong><small>10-minute goal ↗</small></button></div><p class="mobile-demo">A concept in care. Delivery &amp; dispatch are not live.</p></section>
-    <section class="catalogue-section blue-section" id="catalogue" aria-labelledby="catalogue-title">
-      <div class="section-shell">
-        <header class="shop-heading reveal"><div><p class="eyebrow">01 / YOUR EVERYDAY CARE SHELF</p><h2 id="catalogue-title">Little essentials.<br> For every life.</h2><p>Human medicines, pet care, and the things you’re glad to have at home.</p></div><p class="catalogue-note">30 considered essentials.<br>One place for the whole family.</p></header>
-        <div class="shelf-feature"><div><p class="eyebrow">LESS TYPING. MORE CARE.</p><h3>Your prescription.<br>Your essentials, found.</h3><p>Upload a photo or PDF. Review the matches. Build your bag.</p><button class="care-button" type="button" data-open="prescription-panel">Scan a prescription ↗</button></div><img src="Images/illustrations/prescription-check.svg" width="250" height="180" alt="Prescription and medicine illustration"></div>
-        <div class="catalogue-toolbar">
-          <div class="audience-switch" role="group" aria-label="Choose human or pet care"><span class="switch-thumb" aria-hidden="true"></span><button type="button" data-audience="human" aria-pressed="true">✚ Human care <span>15</span></button><button type="button" data-audience="pet" aria-pressed="false">♧ Pet care <span>15</span></button></div>
-          <label class="catalogue-search"><span class="visually-hidden">Search the current catalogue</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input type="search" id="catalogue-search" placeholder="Search medicines, vitamins, first aid…" autocomplete="off"></label>
-        </div>
-        <div class="catalogue-filter-row"><div class="category-filters" id="category-filters" role="group" aria-label="Filter products by category"></div><label class="sort-control"><span class="visually-hidden">Sort products</span><select id="catalogue-sort"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name: A–Z</option></select></label></div>
-        <div class="catalogue-meta"><p id="catalogue-count">15 essentials for human care</p><p>Demo catalogue · Illustrative packaging and prices</p></div>
-        <div class="product-grid" id="product-grid" aria-label="Products"></div>
-        <p class="visually-hidden" id="catalogue-status" role="status"></p>
-        <noscript><p class="empty-results">Enable JavaScript to browse the catalogue and use the cart.</p></noscript>
-      </div>
-    </section>
 
-    <section class="product-detail-section blue-section" id="pdp" aria-labelledby="detail-name">
-      <div class="section-shell">
-        <header class="detail-heading reveal"><div><p class="eyebrow">02 / A CLOSER LOOK</p><h2>Your next essential.</h2></div><a href="#catalogue" class="text-link">Back to the shelf ↑</a></header>
-        <div class="product-detail" id="product-detail"></div>
-      </div>
-    </section>
-    <section id="inside" class="omni-inside-section" aria-labelledby="inside-title">
-      <header class="inside-heading"><p class="story-kicker">A CLOSER LOOK</p><h2 id="inside-title">INSIDE THE CARE.</h2><p>There’s more to fast delivery than the last ten minutes.</p></header>
-      <div class="inside-story-grid"><div class="inside-capsule-view"><img src="Images/capsule-hero-v2.png" alt="A detailed blue and clear capsule containing ivory pellets" width="1024" height="1536" loading="lazy"><span class="inside-detail detail-one">01 / THE RIGHT MEDICINE</span><span class="inside-detail detail-two">02 / THE RIGHT CHECKS</span><span class="inside-detail detail-three">03 / HANDLED WITH CARE</span></div><div class="inside-principles"><p class="story-kicker">THOUGHTFUL FROM THE START</p><h3>FAST.<br>WITHOUT<br>THE GUESSWORK.</h3><p>Our delivery goal starts with the essentials: the right medicine, a prescription check where needed, clear pricing, and a carefully packed order.</p><div class="inside-facts"><div><strong>10 min</strong><span>Medicine delivery goal</span></div><div><strong>10 min</strong><span>Doctor assignment goal</span></div><div><strong>One home</strong><span>For human &amp; pet care</span></div></div><p class="concept-note">A concept in development. The capsule is a brand visual.</p></div></div>
-      <div class="inside-family-row"><img src="Images/illustrations/family-care.svg" alt="Illustration of a person and their dog with a medicine bag" width="960" height="720" loading="lazy"><div><p class="story-kicker">ALL YOUR LOVED ONES</p><h3>THE WHOLE<br>FAMILY. COVERED.</h3><p>Because care doesn’t stop at people. A simpler everyday experience for you, your family, and your pets.</p><a class="care-button secondary" href="#features">Explore the care journey ↗</a></div></div>
-    </section>
 
-    <section id="gallery" class="omni-image-gallery" aria-label="Care for people and pets, in pictures">
-      <div class="gallery-col col-1"><img src="Images/illustrations/family-care.svg" alt="Human and pet care illustration" width="960" height="720" loading="lazy" decoding="async"><img src="Images/illustrations/prescription-check.svg" alt="Prescription check illustration" width="960" height="720" loading="lazy" decoding="async"></div>
-      <div class="gallery-col col-2"><img src="Images/illustrations/doctor-access.svg" alt="Doctor access illustration" width="960" height="720" loading="lazy" decoding="async"><img src="Images/illustrations/medicine-delivery.svg" alt="Medicine delivery illustration" width="960" height="720" loading="lazy" decoding="async"></div>
-      <div class="gallery-col col-3"><img src="Images/illustrations/prescription-check.svg" alt="Prescription check illustration" width="960" height="720" loading="lazy" decoding="async"><img src="Images/illustrations/family-care.svg" alt="Human and pet care illustration" width="960" height="720" loading="lazy" decoding="async"></div>
-      <div class="gallery-col col-4"><img src="Images/illustrations/medicine-delivery.svg" alt="Medicine delivery illustration" width="960" height="720" loading="lazy" decoding="async"><img src="Images/illustrations/doctor-access.svg" alt="Doctor access illustration" width="960" height="720" loading="lazy" decoding="async"></div>
-    </section>
 
-    <section id="omni-court-sequence" class="omni-court-sequence" aria-label="Four stages of the planned Healio care journey">
-      <div class="omni-court-container">
-        <div class="care-sequence-frame is-active" data-frame="0" aria-hidden="false"><img class="omni-court-img omni-court-img-1" src="Images/illustrations/family-care.svg" alt="" width="960" height="720" loading="lazy"><div class="sequence-caption"><p class="story-kicker">01 / DISCOVER</p><h2>CARE BEGINS<br>WITH YOU.</h2><p>Human medicines. Pet essentials. One place to start.</p></div></div>
-        <div class="care-sequence-frame" data-frame="1" aria-hidden="true"><img class="omni-court-img omni-court-img-2" src="Images/illustrations/doctor-access.svg" alt="" width="960" height="720" loading="lazy"><div class="sequence-caption"><p class="story-kicker">02 / CONNECT</p><h2>THE NEXT STEP.<br>A LITTLE CLEARER.</h2><p>A doctor assigned in 10 minutes is our goal.</p></div></div>
-        <div class="care-sequence-frame" data-frame="2" aria-hidden="true"><img class="omni-court-img omni-court-img-3" src="Images/illustrations/prescription-check.svg" alt="" width="960" height="720" loading="lazy"><div class="sequence-caption"><p class="story-kicker">03 / CHECK & PACK</p><h2>EVERY DETAIL.<br>HANDLED WITH CARE.</h2><p>Pharmacy review. Thoughtful packing. Ready for your door.</p></div></div>
-        <div class="care-sequence-frame" data-frame="3" aria-hidden="true"><img class="omni-court-img omni-court-img-4" src="Images/illustrations/medicine-delivery.svg" alt="" width="960" height="720" loading="lazy"><div class="sequence-caption"><p class="story-kicker">04 / AT YOUR DOOR</p><h2>10 MINUTES.<br>CLOSER TO CARE.</h2><p>The speed of quick commerce. Built around the ones you love.</p></div></div>
-        <div class="sequence-progress" aria-hidden="true"><span class="is-active"></span><span></span><span></span><span></span></div>
-        <p class="sequence-hint">SCROLL TO FOLLOW THE JOURNEY <span aria-hidden="true">↓</span></p>
-      </div>
-    </section>
-  </div>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="assets/healio/mark-black.svg" rel="shortcut icon" type="image/x-icon">
+<link href="assets/healio/mark-black.svg" rel="apple-touch-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/interactions.css"><link rel="stylesheet" href="css/healio.css"><script src="js/catalogue.js" defer=""></script><script src="js/care.js" defer=""></script><script src="js/main.js" defer=""></script></head>
+<body data-scrolling-started="false">
+<div class="embedded">
 </div>
-  </main>
+<div class="page-wrapper">
+<header data-header="" class="header">
+<div class="header__inner">
+<div class="header__title">
+<a href="#home" aria-current="page" class="header__title-link inline-link current-link" aria-label="Healio home"><span class="healio-logo">healio<span class="healio-logo-plus">+</span><small>HUMANS<br>&amp; PAWS</small></span></a>
+</div>
+<nav class="header__nav">
+<ul role="list" class="header__nav-list list-reset">
+<li class="header__nav-list-item">
+<a data-button="" href="#catalogue" class="button inline-link">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Shop care</span>
+</span>
+</a>
+</li>
+<li class="header__nav-list-item">
+<button data-button="" class="button inline-link" type="button" data-care-action="prescription">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Prescription</span>
+</span>
+</button>
+</li>
+<li class="header__nav-list-item">
+<a data-button="" href="#impact" class="button inline-link">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Our impact</span>
+</span>
+</a>
+</li>
+<li class="header__nav-list-item">
+<a data-button="" href="#questions" class="button inline-link">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Questions</span>
+</span>
+</a>
+</li>
+<li class="header__nav-list-item">
+<button data-button-alt="" data-wf--button-alt--variant="base" class="button-alt inline-link" type="button" data-care-action="cart" data-cart-label="">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Your cart · 0</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</li>
+</ul>
+</nav>
+<div class="header__sub">
+<ul role="list" class="header__sub-list list-reset">
+<li class="header__sub-list-item">
+<button data-button="" class="button inline-link" type="button" data-care-action="doctor">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Doctor in 10 min</span>
+</span>
+</button>
+</li>
+<li class="header__sub-list-item">
+<div class="lang-switch">
+<div class="w-locales-list">
+<div role="list" class="locales-list w-locales-items">
+<div data-button="" role="listitem" class="w-locales-item">
+<a data-button-text="" hreflang="en" href="./" aria-current="page" class="link current-link">en</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="header__sub-list-item">
+<button aria-label="Upload prescription" data-wf--button-social-instagram--variant="base" class="button-social inline-link" type="button" data-care-action="prescription"><span class="button-social__inner"><span class="button-social__bg"></span><span class="button-social__icon-outer"><span class="care-social-icon">Rx</span></span></span></button>
+</li>
+<li class="header__sub-list-item">
+<button aria-label="Open cart" data-wf--button-social-tiktok--variant="base" class="button-social inline-link" type="button" data-care-action="cart"><span class="button-social__inner"><span class="button-social__bg"></span><span class="button-social__icon-outer"><span class="care-social-icon">+</span></span></span></button>
+</li>
+</ul>
+</div>
+<div class="header__menu-toggle">
+<button data-button-alt="" type="button" data-menu-toggle="" class="button-alt is--menu-toggle">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Menu</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="none" aria-hidden="true" class="button-alt__icon is--menu-toggle">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6h10M4 12h16H7m0 6h10">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
+</header>
+<div data-menu="" data-lenis-prevent="" data-menu-open="" class="menu">
+<div class="menu__inner">
+<div class="menu__container">
+<div class="menu__bg">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="none" viewBox="0 0 386 712" class="menu__bg-svg">
+<path fill="currentColor" d="M115.415-56.646c27.361-10.951 55.489-16.17 84.985-10.076 40.714 8.42 64.637 33.98 75.035 73.257 9.349 35.348 3.777 70.616-.769 105.961-4.86 37.766-10.042 75.565-12.734 113.514-1.993 28.09 5.481 54.869 20.638 79.162 14.419 23.106 34.405 37.375 61.693 41.433 30.041 4.465 59.172-.835 88.412-6.653 26.135-5.192 52.289-10.684 78.69-13.939 22.265-2.747 44.838-1.383 65.775 8.431 38.064 17.842 51.287 57.852 44.901 96.147-5.782 34.664-24.948 61.621-49.555 85.474-26.279 25.482-57.556 44.224-87.22 65.142-28.385 20.025-55.476 41.366-73.798 71.673-9.327 15.437-16.063 31.796-14.646 50.393 2.044 26.803 18.243 46.689 45.101 55.529a130 130 0 0 0 4.836 1.485l-139.704 55.662a1143 1143 0 0 1-16.076-9.954c-23.207-14.664-45.445-30.911-63.44-51.988-21.556-25.244-32.204-53.705-17.969-85.831 6.78-15.297 16.202-30.236 27.474-42.541 21.248-23.189 45.199-43.868 67.023-66.553 10.99-11.421 21.425-24.013 29.233-37.716 15.33-26.925 5.653-54.263-21.962-68.343-17.177-8.762-35.531-13.481-54.297-17.195-27.909-5.514-56.046-10.232-83.497-17.516-15.707-4.173-31.138-11.277-45.104-19.692-22.108-13.327-29.728-34.941-28.254-60.155 1.445-24.649 11.284-46.711 20.765-68.939 5.78-13.545 11.193-27.25 16.537-40.967 1.371-3.514 2.093-7.336 2.693-11.083 3.859-24.009-7.353-38.23-31.777-36.443-20.635 1.512-40.986 6.805-61.477 10.321-25.248 4.332-50.38 9.871-75.818 12.53-15.074 1.576-29.77 1.044-44.109-1.173V63.588q.326-.19.651-.383c28.317-16.804 55.126-36.258 81.9-55.513 33.66-24.207 67.019-48.8 105.864-64.338">
+</path>
+</svg>
+</div>
+<div class="menu__content">
+<header class="menu__header">
+<a href="#home" aria-current="page" class="menu__header-title-link inline-link current-link" aria-label="Healio home"><span class="healio-logo">healio<span class="healio-logo-plus">+</span><small>HUMANS<br>&amp; PAWS</small></span></a>
+<div class="menu__close">
+<button data-button-alt="" type="button" aria-label="Close menu" data-menu-close="" class="button-alt is--menu-toggle">
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="none" aria-hidden="true" class="button-alt__icon is--menu-toggle">
+<path fill="currentColor" d="m12 13.4-4.9 4.9a.95.95 0 0 1-.7.275.95.95 0 0 1-.7-.275.95.95 0 0 1-.275-.7q0-.425.275-.7l4.9-4.9-4.9-4.9a.95.95 0 0 1-.275-.7q0-.425.275-.7a.95.95 0 0 1 .7-.275q.425 0 .7.275l4.9 4.9 4.9-4.9a.95.95 0 0 1 .7-.275q.425 0 .7.275a.95.95 0 0 1 .275.7.95.95 0 0 1-.275.7L13.4 12l4.9 4.9a.95.95 0 0 1 .275.7.95.95 0 0 1-.275.7.95.95 0 0 1-.7.275.95.95 0 0 1-.7-.275z">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</header>
+<nav class="menu__nav">
+<ul role="list" class="menu__nav-list list-reset">
+<li class="menu__nav-list-item">
+<button data-button="" class="button inline-link" type="button" data-care-action="prescription">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Prescription</span>
+</span>
+</button>
+</li>
+<li class="menu__nav-list-item">
+<a data-button="" href="#impact" class="button inline-link">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Our impact</span>
+</span>
+</a>
+</li>
+<li class="menu__nav-list-item">
+<a data-button="" href="#questions" class="button inline-link">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Questions</span>
+</span>
+</a>
+</li>
+<li class="menu__nav-list-item">
+<a data-button="" href="#catalogue" class="button inline-link">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Shop care</span>
+</span>
+</a>
+</li>
+</ul>
+</nav>
+<footer class="menu__footer">
+<div class="menu__sub">
+<ul role="list" class="menu__sub-list list-reset">
+<li class="header__sub-list-item">
+<div class="lang-switch">
+<div class="w-locales-list">
+<div role="list" class="locales-list w-locales-items">
+<div data-button="" role="listitem" class="w-locales-item">
+<a data-button-text="" hreflang="en" href="./" aria-current="page" class="link current-link">en</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="menu__sub-list-item">
+<a aria-label="Go to Instagram" data-wf--button-social-instagram--variant="base" href="#home" class="button-social inline-link">
+<div class="button-social__inner">
+<span class="button-social__bg">
+</span>
+<span class="button-social__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="100%" class="button-social__icon">
+<path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</div>
+</a>
+</li>
+<li class="menu__sub-list-item">
+<a aria-label="Go to TikTok" data-wf--button-social-tiktok--variant="base" href="#home" class="button-social inline-link">
+<div class="button-social__inner">
+<span class="button-social__bg">
+</span>
+<span class="button-social__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="100%" class="button-social__icon">
+<path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="menu__login">
+<button data-button-alt="" data-wf--button-alt--variant="base" class="button-alt inline-link" type="button" data-care-action="cart" data-cart-label="">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Your cart · 0</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+<button data-button="" class="button inline-link" type="button" data-care-action="doctor">
+<span class="button__bg">
+</span>
+<span class="button__inner">
+<span data-button-text="" class="button__text">Doctor in 10 min</span>
+</span>
+</button>
+</div>
+</footer>
+</div>
+</div>
+<div class="menu__backdrop">
+</div>
+</div>
+</div>
+<main class="main" id="main-content">
+<section data-intro-home="" class="hero is--bg-yellow" id="home">
+<div class="hero__container u-container">
+<div class="hero__inner">
+<div data-hero-content="" class="hero__content">
+<div class="hero__header">
+<h1 data-hero-title="" class="hero__title u-heading-xxl">A little care. Right when you need it.</h1>
+<p data-hero-paragraph="" class="hero__paragraph u-paragraph-regular">Medicines for you and your pets. A doctor in 10 minutes. Upload your prescription, compare prices, and leave the planet a little greener.</p>
+</div>
+<button data-button-alt="" data-wf--button-alt--variant="base" class="button-alt inline-link" type="button" data-care-action="shop">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Shop your essentials</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button><button type="button" class="care-hero-link" data-care-action="prescription">Have a prescription? Upload it ↗</button>
+<div class="hero__text-wrap">
+<div class="hero__text-outer">
+<p data-hero-handwritten-text="" class="hero__text u-handwritten-regular">For people, pets &amp; a greener planet</p>
+</div>
+</div>
+</div>
+<div class="hero__visual">
+<img class="hero__visual-img" src="assets/healio/hero-bottle-photo.png" alt="Healio everyday care bottle" data-hero-visual="" loading="eager" fetchpriority="high">
+</div>
+</div>
+</div>
+<div data-hero-easter-egg="" class="hero__logo-easter-egg">
+<div data-pop-up="" data-wf--logo-pop-up--variant="left" class="pop-up">
+<button type="button" data-pop-up-button="" aria-label="Explore Healio care" class="pop-up__button">
+<span class="pop-up__button-inner">
+<span class="pop-up__button-svg"><svg viewBox="0 0 80 80" fill="none" width="100%" aria-hidden="true"><circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="4"></circle><path d="M32 16h16v16h16v16H48v16H32V48H16V32h16z" fill="currentColor"></path></svg></span>
+</span>
+</button>
+<div class="pop-up__overlay">
+<div class="pop-up__overlay-inner">
+<div class="pop-up__overlay-bg-wrap">
+<div class="pop-up__overlay-ears">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 44 45" width="100%" class="pop-up__overlay-left-ear">
+<path fill="currentColor" d="M1.335.198c.671-.316 1.5-.254 2.186.187C27.678 16.847 39.839 36.953 44 45h-6.048c-2.382-1.604-6.964-3.674-15.652-4.814C2.999 37.666-.665 14.174.09 2.04.152 1.28.589.515 1.335.198Z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 29 80" width="100%" class="pop-up__overlay-right-ear">
+<path fill="currentColor" d="M19.388.879c.667-.771 1.647-1.018 2.559-.807.912.21 1.682.956 1.926 1.861C34.595 38.09 25.79 69.237 21.823 80h-4.188c-.17-4.22-2.739-13.318-10.975-22.064-8.493-9.099-8.88-21.913-1.063-37.23C11.221 9.603 19.091 1.266 19.388.879Z">
+</path>
+</svg>
+</div>
+<div class="pop-up__overlay-bg">
+</div>
+</div>
+<div class="pop-up__overlay-content">
+<h3 class="pop-up__overlay-title u-heading-xs">A little care for everyone.</h3>
+<div class="pop-up__overlay-content-action">
+<button data-button-alt="" data-wf--button-alt--variant="small" class="button-alt inline-link" type="button" data-care-action="shop">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Explore Healio</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pop-up__overlay-target-zone">
+</div>
+</div>
+</div>
+</div>
+<div data-hero-bg-intro="" data-hero-bg="" class="hero__bg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1403" data-background-animation="" data-background-animation-small="" class="hero__bg-svg is--desktop">
+<path d="M1695.07 151.632c64.24-31.904 131.73-7.088 176.11 42.102 40.17 44.528 55.82 98.753 61.56 156.949 6.14 62.16-2.03 123.84-5.58 185.677-3.39 59.179-3.64 118.025 17.39 174.679 10.72 28.85 25.42 55.218 51.77 73.069 37.97 25.728 81.74 25.202 122.06-1.291 30.97-20.344 55.08-47.559 77.62-76.157v264.039c-58.87 19.501-116.27 43.421-174.84 63.861-44.23 15.43-89.54 27.89-136.8 29.55-56.61 1.99-105.94-14-133.74-67.126-13.24-25.298-23.19-53.745-27.66-81.867-8.42-53.005-10.61-106.956-17.74-160.196-3.59-26.806-9.33-54.115-19.35-79.093-19.69-49.067-66.48-65.165-114.61-43.224-29.94 13.641-55.74 33.151-80.62 54.275-37 31.428-73.18 64.005-112.05 92.942-22.25 16.551-48.12 29.623-74.19 39.345-41.28 15.384-78.24 2.614-110.36-26.124-31.39-28.102-50.42-64.67-70.05-100.935-11.96-22.103-24.51-43.883-37.17-65.587-3.23-5.562-7.57-10.586-11.94-15.365-27.98-30.646-58.88-30.767-82.42 3.757-19.89 29.17-34.427 61.976-51.488 93.082-21.019 38.326-40.302 77.781-63.758 114.584-39.329 61.713-97.979 101.491-163.715 129.981-59.999 26.005-121.922 47.501-182.611 71.931-42.824 17.23-83.179 39.5-118.338 69.59-34.021 29.14-59.637 64.2-65.374 110.44-3.776 30.48 4.892 57.48 24.129 81.15 36.407 44.77 86.741 62.81 141.012 73.57 59.97 11.89 120.728 11.08 181.378 12.17 61.192 1.09 122.363 2.43 181.917 18.66 37.051 10.09 72.202 24.64 102.005 49.74 39.753 33.48 57.763 73.94 57.933 120.19H226.533c-32.085-15.58-61.858-36.47-89.169-62.36-48.299-45.77-73.99-103.5-81.404-168.72-13.75-120.96 23.385-223.39 117.115-302.9 47.855-40.585 105.059-63.358 164.62-80.624 55.764-16.161 111.972-30.874 167.344-48.27 81.076-25.473 126.787-83.135 138.108-165.858 7.617-55.667 10.094-112.134 12.801-168.345 3.398-70.665 5.964-141.34 26.451-209.729 14.422-48.177 37.313-91.294 76.771-124.226 54.474-45.449 114.019-50.265 177.528-22.453 57.146 25.041 98.342 69.929 140.732 113.528 45.29 46.59 90.28 93.645 138.12 137.532 35.4 32.486 79.11 50.935 127.66 56.479 46.17 5.271 86.45-6.277 120.85-38.421 37.86-35.39 61.71-79.931 84.98-125.169 20.81-40.424 41.24-81.195 64.93-119.919 19.97-32.658 45.75-61.364 81.1-78.913" fill="currentColor" stroke="currentColor">
+</path>
+<path d="M957.607 848.011c20.203-17.228 39.917-18.164 60.863-1.598 24.27 19.186 39.37 45.721 56.29 70.767 20.96 31.054 43.97 59.866 77.1 79.279 41.59 24.371 83.09 22.411 120.71-5.291 52.77-38.829 86.04-99.464 141.58-134.68 55.94-35.443 123.8-13.01 158.65 32.594 24.12 31.568 37.13 67.993 49.5 105.059 15.59 46.719 30.26 93.909 49.19 139.269 17.07 40.92 45.88 73.4 88.67 90.21 28.36 11.14 57.68 9.52 87.02 3.74 41.87-8.25 78.62-28.78 116.22-47.63 33.58-16.84 67.56-33.2 102.44-47.01 26.07-10.33 55.11-9.2 82.05-3.2 56.46 12.08 85.31 54.13 71.77 110.37-5.95 24.65-16.34 48.25-25.99 72.01l-200.78 210.09c-1.38 21.8-56.65 62.14-72.01 78.21-83.44-113.45-193.12-200.93-308.88-278.2-32.4-21.62-122-69.18-168.22-88.23-46.23-19.06-83.56-40.17-105.3-15.59-6.32 7.14-8.24 18.89-4.06 34.64 17.72 66.79 82.4 117.75 128.69 165.26 41.55 42.65 79.03 83.98 109.75 135.17 27.95 54.83 33.11 111.22.04 165.6-11.32 18.46-23.77 36.39-36.62 54.15h-398.04c11.97-17.53 23.77-35.16 35.19-53.04 51.48-80.58 72.49-167.09 44.19-261.54-17.6-58.74-55.7-101.56-103.96-136.93-77.07-56.49-164.4-70.38-256.68-58.91-90.677 11.28-180.716 36.61-272.653 33.39-53.175-1.87-76.339-50.6-54.608-99.18 12.558-28.06 37.122-45.2 63.16-59.83 65.899-37.02 146.081-33.01 217.687-51.68 64.376-16.8 100.398-59.8 109.708-125.523 3.03-21.431 6.031-42.89 10.139-64.133 3.621-18.691 12.243-34.869 27.194-47.613" fill="#F9A220" stroke="#F9A220">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 402 874" class="hero__bg-svg is--mobile">
+<path d="M189.759 317.853c25.652-21.403 53.691-23.67 83.597-10.574 26.911 11.792 46.31 32.93 66.272 53.461 21.327 21.939 42.513 44.098 65.039 64.764A100 100 0 0 0 422 438.279v159.838c-9.837-1.862-19.006-7.076-27.461-14.641-14.783-13.233-23.743-30.453-32.984-47.531-5.632-10.408-11.546-20.664-17.503-30.884-1.525-2.619-3.567-4.985-5.625-7.236-13.174-14.431-27.725-14.489-38.812 1.769-9.366 13.736-16.212 29.185-24.246 43.833-9.898 18.048-18.977 36.628-30.022 53.958-18.521 29.061-46.139 47.792-77.095 61.208-28.254 12.246-57.414 22.369-85.992 33.874-20.166 8.115-39.169 18.597-55.725 32.769-16.02 13.72-28.084 30.233-30.785 52.008-1.778 14.352 2.303 27.067 11.362 38.211 17.145 21.084 40.847 29.577 66.404 34.644 28.239 5.6 56.85 5.22 85.41 5.73 28.815.513 57.621 1.146 85.665 8.788 17.447 4.754 34.001 11.605 48.035 23.424a91 91 0 0 1 7.403 6.959H-28V661.367c6.342-2.235 12.783-4.262 19.285-6.147 26.26-7.61 52.728-14.539 78.803-22.731 38.178-11.995 59.704-39.148 65.035-78.102 3.587-26.214 4.754-52.805 6.028-79.275 1.601-33.276 2.808-66.557 12.455-98.761 6.792-22.687 17.572-42.991 36.153-58.498" fill="currentColor" stroke="currentColor">
+</path>
+<path d="M283.204 609.36c9.513-8.112 18.797-8.554 28.662-.753 11.425 9.035 18.539 21.531 26.503 33.325 9.871 14.623 20.709 28.191 36.309 37.333 16.136 9.457 32.242 10.494 47.322 3.269V895h-16.915c-8.518-26.74-26.169-46.384-48.396-62.676-36.293-26.602-77.416-33.146-120.871-27.742-29.518 3.67-58.748 9.716-88.226 13.803-13.235 1.836-26.807 2.388-40.167 1.919-25.04-.881-35.948-23.829-25.715-46.703 5.914-13.215 17.482-21.284 29.743-28.174 18.949-10.646 40.112-13.255 61.021-16.795 13.867-2.344 27.924-4.006 41.487-7.542 30.315-7.909 47.278-28.157 51.663-59.109 1.426-10.091 2.84-20.197 4.774-30.2 1.705-8.801 5.765-16.42 12.806-22.421" fill="#F9A220" stroke="#F9A220">
+</path>
+</svg>
+</div>
+<div data-hero-sequence="" class="hero__sequence"><div class="care-hero-art" aria-hidden="true"><img class="care-float-pack" src="assets/healio/hero-carton-photo.png" alt=""><img class="care-float-bottle" src="assets/healio/hero-bottle-photo.png" alt=""><img class="care-float-blister" src="assets/healio/hero-blister-photo.png" alt=""></div></div>
+</section>
+<section class="books is--bg-white" id="catalogue">
+<div class="books__container">
+<div class="books__inner">
+<div class="books__header">
+<div class="books__header-container u-container">
+<div class="books__header-content">
+<h2 class="books__title u-heading-l">Your care shelf</h2>
+<p class="books__paragraph u-paragraph-large">Human essentials. Happy pets. All the little things that help.</p>
+<div class="care-shop-tools"><div class="care-audience" role="group" aria-label="Shop for"><button type="button" data-audience="all" aria-pressed="true">Everyone</button><button type="button" data-audience="human" aria-pressed="false">Humans</button><button type="button" data-audience="pet" aria-pressed="false">Little paws</button></div><label class="care-search"><span class="care-sr">Search medicines and pet care</span><input type="search" id="care-search" placeholder="Find your little essentials…" autocomplete="off"><span aria-hidden="true">⌕</span></label></div><p class="care-filter-count" id="care-filter-count" aria-live="polite">30 little essentials, all in one place.</p><div class="care-browse-row"><button type="button" class="care-browse-all" data-care-action="catalogue">Browse all 30 essentials <span aria-hidden="true">↗</span></button></div></div>
+</div>
+<div class="books__text-wrap">
+<div class="books__text-outer">
+<p data-handwritten-text-inview="" class="book__text u-handwritten-regular">A little prepared. A lot more peace of mind.</p>
+</div>
+</div>
+</div>
+<div class="books__content">
+<div class="collection">
+<div role="list" class="collection-items">
+<div role="listitem" class="collection-item">
+<div data-books-slider="" class="books-slider">
+<div data-books-slider-controls="" class="books-slider__controls home">
+<button type="button" aria-label="Previous Slide" data-books-slider-control="" class="books-slider__controls-button is--previous">
+<span class="books-slider__controls-button-bg">
+</span>
+<span class="books-slider__controls-button-icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="books-slider__controls-button-icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</button>
+<button type="button" aria-label="Next Slide" data-books-slider-control="" class="books-slider__controls-button is--next">
+<span class="books-slider__controls-button-bg">
+</span>
+<span class="books-slider__controls-button-icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="books-slider__controls-button-icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</button>
+</div>
+<div class="books-slider__collection collection">
+<div data-books-slider-wrapper="" role="list" class="books-slider__list collection-items"><div data-product-card="h01" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c2b4eb"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h01" class="books-slider__item-cover care-product-cover" aria-label="View Paracetamol 650 mg"><img src="assets/healio/hero-blister-photo.png" alt="Paracetamol 650 mg" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Paracetamol 650 mg</h3><p class="u-paragraph-small care-product-pack">15 tablets</p><div class="care-product-price"><strong>₹30</strong><s>₹35</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h01">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h01">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Pain &amp; fever</span></div></div></div></div></article></div><div data-product-card="h02" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#8ef1fd"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h02" class="books-slider__item-cover care-product-cover" aria-label="View Cetirizine 10 mg"><img src="assets/healio/hero-blister-photo.png" alt="Cetirizine 10 mg" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Cetirizine 10 mg</h3><p class="u-paragraph-small care-product-pack">10 tablets</p><div class="care-product-price"><strong>₹29</strong><s>₹35</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h02">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h02">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Allergy care</span></div></div></div></div></article></div><div data-product-card="h03" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#faed8f"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h03" class="books-slider__item-cover care-product-cover" aria-label="View ORS Electrolyte Powder"><img src="assets/healio/h03.svg" alt="ORS Electrolyte Powder" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">ORS Electrolyte Powder</h3><p class="u-paragraph-small care-product-pack">21.8 g sachet</p><div class="care-product-price"><strong>₹25</strong><s>₹29</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h03">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h03">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Hydration</span></div></div></div></div></article></div><div data-product-card="h04" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#feb6fa"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h04" class="books-slider__item-cover care-product-cover" aria-label="View Vitamin C 500 mg"><img src="assets/healio/hero-bottle-photo.png" alt="Vitamin C 500 mg" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Vitamin C 500 mg</h3><p class="u-paragraph-small care-product-pack">20 chewable tablets</p><div class="care-product-price"><strong>₹159</strong><s>₹189</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h04">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h04">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Vitamins</span></div></div></div></div></article></div><div data-product-card="h05" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c0d43e"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h05" class="books-slider__item-cover care-product-cover" aria-label="View Vitamin D3 1000 IU"><img src="assets/healio/hero-bottle-photo.png" alt="Vitamin D3 1000 IU" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Vitamin D3 1000 IU</h3><p class="u-paragraph-small care-product-pack">60 capsules</p><div class="care-product-price"><strong>₹249</strong><s>₹299</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h05">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h05">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Vitamins</span></div></div></div></div></article></div><div data-product-card="h06" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#f9a220"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h06" class="books-slider__item-cover care-product-cover" aria-label="View Calcium + D3"><img src="assets/healio/hero-bottle-photo.png" alt="Calcium + D3" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Calcium + D3</h3><p class="u-paragraph-small care-product-pack">60 tablets</p><div class="care-product-price"><strong>₹219</strong><s>₹259</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h06">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h06">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Vitamins</span></div></div></div></div></article></div><div data-product-card="h07" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c2b4eb"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h07" class="books-slider__item-cover care-product-cover" aria-label="View Daily Multivitamin"><img src="assets/healio/hero-bottle-photo.png" alt="Daily Multivitamin" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Daily Multivitamin</h3><p class="u-paragraph-small care-product-pack">30 capsules</p><div class="care-product-price"><strong>₹299</strong><s>₹349</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h07">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h07">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Vitamins</span></div></div></div></div></article></div><div data-product-card="h08" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#8ef1fd"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h08" class="books-slider__item-cover care-product-cover" aria-label="View Antiseptic Solution"><img src="assets/healio/h08.svg" alt="Antiseptic Solution" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Antiseptic Solution</h3><p class="u-paragraph-small care-product-pack">100 ml bottle</p><div class="care-product-price"><strong>₹99</strong><s>₹120</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h08">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h08">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">First aid</span></div></div></div></div></article></div><div data-product-card="h09" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#faed8f"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h09" class="books-slider__item-cover care-product-cover" aria-label="View Digital Thermometer"><img src="assets/healio/h09.svg" alt="Digital Thermometer" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Digital Thermometer</h3><p class="u-paragraph-small care-product-pack">1 device</p><div class="care-product-price"><strong>₹199</strong><s>₹249</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h09">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h09">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Devices</span></div></div></div></div></article></div><div data-product-card="h10" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#feb6fa"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h10" class="books-slider__item-cover care-product-cover" aria-label="View Adhesive Bandages"><img src="assets/healio/h10.svg" alt="Adhesive Bandages" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Adhesive Bandages</h3><p class="u-paragraph-small care-product-pack">25 assorted strips</p><div class="care-product-price"><strong>₹79</strong><s>₹99</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h10">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h10">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">First aid</span></div></div></div></div></article></div><div data-product-card="h11" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c0d43e"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h11" class="books-slider__item-cover care-product-cover" aria-label="View Saline Nasal Spray"><img src="assets/healio/h11.svg" alt="Saline Nasal Spray" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Saline Nasal Spray</h3><p class="u-paragraph-small care-product-pack">20 ml bottle</p><div class="care-product-price"><strong>₹129</strong><s>₹149</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h11">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h11">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Everyday care</span></div></div></div></div></article></div><div data-product-card="h12" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#f9a220"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h12" class="books-slider__item-cover care-product-cover" aria-label="View Sterile Gauze Pads"><img src="assets/healio/h12.svg" alt="Sterile Gauze Pads" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Sterile Gauze Pads</h3><p class="u-paragraph-small care-product-pack">10 pads</p><div class="care-product-price"><strong>₹65</strong><s>₹90</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h12">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h12">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">First aid</span></div></div></div></div></article></div><div data-product-card="h13" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c2b4eb"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h13" class="books-slider__item-cover care-product-cover" aria-label="View Crepe Support Bandage"><img src="assets/healio/h13.svg" alt="Crepe Support Bandage" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Crepe Support Bandage</h3><p class="u-paragraph-small care-product-pack">10 cm × 4 m</p><div class="care-product-price"><strong>₹99</strong><s>₹120</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h13">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h13">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">First aid</span></div></div></div></div></article></div><div data-product-card="h14" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#8ef1fd"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h14" class="books-slider__item-cover care-product-cover" aria-label="View Hand Sanitiser"><img src="assets/healio/h14.svg" alt="Hand Sanitiser" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Hand Sanitiser</h3><p class="u-paragraph-small care-product-pack">100 ml bottle</p><div class="care-product-price"><strong>₹69</strong><s>₹85</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h14">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h14">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">Everyday care</span></div></div></div></div></article></div><div data-product-card="h15" data-audience="human" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#faed8f"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="h15" class="books-slider__item-cover care-product-cover" aria-label="View Home First-Aid Kit"><img src="assets/healio/h15.svg" alt="Home First-Aid Kit" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Home First-Aid Kit</h3><p class="u-paragraph-small care-product-pack">1 essentials kit</p><div class="care-product-price"><strong>₹499</strong><s>₹599</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="h15">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="h15">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Human care</span><span class="tag-small care-category-tag">First aid</span></div></div></div></div></article></div><div data-product-card="p01" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#feb6fa"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p01" class="books-slider__item-cover care-product-cover" aria-label="View Dog Multivitamin Chews"><img src="assets/healio/p01.svg" alt="Dog Multivitamin Chews" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Dog Multivitamin Chews</h3><p class="u-paragraph-small care-product-pack">60 soft chews</p><div class="care-product-price"><strong>₹399</strong><s>₹499</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p01">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p01">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Supplements</span></div></div></div></div></article></div><div data-product-card="p02" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c0d43e"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p02" class="books-slider__item-cover care-product-cover" aria-label="View Cat Multivitamin Chews"><img src="assets/healio/p02.svg" alt="Cat Multivitamin Chews" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Cat Multivitamin Chews</h3><p class="u-paragraph-small care-product-pack">30 soft chews</p><div class="care-product-price"><strong>₹349</strong><s>₹429</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p02">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p02">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Supplements</span></div></div></div></div></article></div><div data-product-card="p03" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#f9a220"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p03" class="books-slider__item-cover care-product-cover" aria-label="View Pet Omega-3 Oil"><img src="assets/healio/p03.svg" alt="Pet Omega-3 Oil" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Pet Omega-3 Oil</h3><p class="u-paragraph-small care-product-pack">150 ml bottle</p><div class="care-product-price"><strong>₹499</strong><s>₹599</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p03">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p03">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Supplements</span></div></div></div></div></article></div><div data-product-card="p04" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c2b4eb"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p04" class="books-slider__item-cover care-product-cover" aria-label="View Dog Calcium Tablets"><img src="assets/healio/p04.svg" alt="Dog Calcium Tablets" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Dog Calcium Tablets</h3><p class="u-paragraph-small care-product-pack">60 tablets</p><div class="care-product-price"><strong>₹299</strong><s>₹349</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p04">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p04">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Supplements</span></div></div></div></div></article></div><div data-product-card="p05" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#8ef1fd"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p05" class="books-slider__item-cover care-product-cover" aria-label="View Pet Probiotic Sachets"><img src="assets/healio/p05.svg" alt="Pet Probiotic Sachets" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Pet Probiotic Sachets</h3><p class="u-paragraph-small care-product-pack">30 sachets</p><div class="care-product-price"><strong>₹449</strong><s>₹549</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p05">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p05">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Digestive care</span></div></div></div></div></article></div><div data-product-card="p06" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#faed8f"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p06" class="books-slider__item-cover care-product-cover" aria-label="View Dog Deworming Tablets"><img src="assets/healio/p06.svg" alt="Dog Deworming Tablets" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Dog Deworming Tablets</h3><p class="u-paragraph-small care-product-pack">4 tablets</p><div class="care-product-price"><strong>₹179</strong><s>₹219</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p06">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p06">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Rx review</span></div></div></div></div></article></div><div data-product-card="p07" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#feb6fa"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p07" class="books-slider__item-cover care-product-cover" aria-label="View Cat Deworming Tablets"><img src="assets/healio/p07.svg" alt="Cat Deworming Tablets" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Cat Deworming Tablets</h3><p class="u-paragraph-small care-product-pack">2 tablets</p><div class="care-product-price"><strong>₹149</strong><s>₹189</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p07">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p07">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Rx review</span></div></div></div></div></article></div><div data-product-card="p08" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c0d43e"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p08" class="books-slider__item-cover care-product-cover" aria-label="View Dog Flea &amp; Tick Spot-On"><img src="assets/healio/p08.svg" alt="Dog Flea &amp; Tick Spot-On" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Dog Flea &amp; Tick Spot-On</h3><p class="u-paragraph-small care-product-pack">1 applicator</p><div class="care-product-price"><strong>₹329</strong><s>₹399</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p08">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p08">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Rx review</span></div></div></div></div></article></div><div data-product-card="p09" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#f9a220"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p09" class="books-slider__item-cover care-product-cover" aria-label="View Cat Flea &amp; Tick Spot-On"><img src="assets/healio/p09.svg" alt="Cat Flea &amp; Tick Spot-On" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Cat Flea &amp; Tick Spot-On</h3><p class="u-paragraph-small care-product-pack">1 applicator</p><div class="care-product-price"><strong>₹299</strong><s>₹379</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p09">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p09">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Rx review</span></div></div></div></div></article></div><div data-product-card="p10" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c2b4eb"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p10" class="books-slider__item-cover care-product-cover" aria-label="View Gentle Pet Shampoo"><img src="assets/healio/p10.svg" alt="Gentle Pet Shampoo" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Gentle Pet Shampoo</h3><p class="u-paragraph-small care-product-pack">200 ml bottle</p><div class="care-product-price"><strong>₹249</strong><s>₹299</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p10">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p10">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Grooming</span></div></div></div></div></article></div><div data-product-card="p11" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#8ef1fd"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p11" class="books-slider__item-cover care-product-cover" aria-label="View Pet Ear Care Cleanser"><img src="assets/healio/p11.svg" alt="Pet Ear Care Cleanser" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Pet Ear Care Cleanser</h3><p class="u-paragraph-small care-product-pack">100 ml bottle</p><div class="care-product-price"><strong>₹199</strong><s>₹249</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p11">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p11">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Grooming</span></div></div></div></div></article></div><div data-product-card="p12" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#faed8f"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p12" class="books-slider__item-cover care-product-cover" aria-label="View Pet Wound Care Spray"><img src="assets/healio/p12.svg" alt="Pet Wound Care Spray" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Pet Wound Care Spray</h3><p class="u-paragraph-small care-product-pack">100 ml bottle</p><div class="care-product-price"><strong>₹249</strong><s>₹299</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p12">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p12">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Rx review</span></div></div></div></div></article></div><div data-product-card="p13" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#feb6fa"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p13" class="books-slider__item-cover care-product-cover" aria-label="View Paw Protection Balm"><img src="assets/healio/p13.svg" alt="Paw Protection Balm" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Paw Protection Balm</h3><p class="u-paragraph-small care-product-pack">50 g tin</p><div class="care-product-price"><strong>₹179</strong><s>₹229</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p13">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p13">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Grooming</span></div></div></div></div></article></div><div data-product-card="p14" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#c0d43e"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p14" class="books-slider__item-cover care-product-cover" aria-label="View Dog Dental Chews"><img src="assets/healio/p14.svg" alt="Dog Dental Chews" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Dog Dental Chews</h3><p class="u-paragraph-small care-product-pack">7 chews</p><div class="care-product-price"><strong>₹199</strong><s>₹249</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p14">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p14">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Dental care</span></div></div></div></div></article></div><div data-product-card="p15" data-audience="pet" role="listitem" class="books-slider__list-item care-product"><article data-books-slider-item="" class="books-slider__item"><div class="books-slider__item-inner"><div class="books-slider__item-bg" style="background-color:#f9a220"></div><div class="books-slider__item-container"><button type="button" data-care-action="product" data-product="p15" class="books-slider__item-cover care-product-cover" aria-label="View Digital Pet Thermometer"><img src="assets/healio/p15.svg" alt="Digital Pet Thermometer" class="books-slider__item-img" loading="lazy"></button><div class="books-slider__item-content"><div class="books-slider__item-text"><h3 class="books-slider__item-title u-heading-s">Digital Pet Thermometer</h3><p class="u-paragraph-small care-product-pack">1 device</p><div class="care-product-price"><strong>₹249</strong><s>₹299</s></div><div class="care-product-actions"><button type="button" class="care-add" data-care-action="add" data-product="p15">Add +</button><button type="button" class="care-compare" data-care-action="compare" data-product="p15">Compare ↗</button></div></div><div class="care-product-tags"><span class="tag-small">Pet care</span><span class="tag-small care-category-tag">Devices</span></div></div></div></div></article></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p id="care-no-results" class="care-empty" hidden="">No little essentials found. Try another name or switch who you’re shopping for.</p><p class="care-shelf-note">Illustrative product imagery &amp; sample prices. Prescription items need professional review.</p></div>
+</div>
+</div>
+</section>
+<section class="flow is--inner-clip is--bg-soft-pink">
+<div class="flow__container u-container">
+<div class="flow__inner">
+<header class="flow__header">
+<h2 class="flow__title u-heading-l">How care comes home</h2>
+<div class="flow__text-wrap">
+<div class="flow__text-outer">
+<p data-handwritten-text-inview="" class="flow__text u-handwritten-regular">Consider us your little care companion</p>
+</div>
+</div>
+<div class="flow__cta">
+<img src="assets/healio/mark-black.svg" loading="lazy" alt="Healio care mark" class="flow__cta-logo">
+<button data-button-alt="" data-wf--button-alt--variant="base" class="button-alt inline-link" type="button" data-care-action="prescription">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Upload prescription</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</header>
+<div class="flow__content">
+<div data-call-out="" class="flow__list">
+<div data-call-out-item="" class="flow__list-item">
+<div data-call-out-child="" data-wf--flow-card--variant="base" class="flow__card">
+<div class="flow__card-inner">
+<div class="flow__card-header">
+<span class="flow__card-header-title u-handwritten-big">Step #1</span>
+</div>
+<div class="flow__card-img-wrap">
+<img alt="Explore your essentials" src="assets/healio/step-explore.svg" loading="lazy" class="flow__card-img">
+</div>
+<div class="flow__card-content">
+<h3 class="flow__card-content-title u-heading-s">Explore your essentials</h3>
+<p class="flow__card-content-paragraph u-paragraph-regular">Find medicine and everyday care for the people and paws you love.</p>
+</div>
+</div>
+</div>
+</div>
+<div data-call-out-item="" class="flow__list-item">
+<div data-call-out-child="" data-wf--flow-card--variant="bright-pink" class="flow__card">
+<div class="flow__card-inner">
+<div class="flow__card-header">
+<span class="flow__card-header-title u-handwritten-big">Step #2</span>
+</div>
+<div class="flow__card-img-wrap">
+<img alt="Upload your prescription" src="assets/healio/step-prescription.svg" loading="lazy" class="flow__card-img">
+</div>
+<div class="flow__card-content">
+<h3 class="flow__card-content-title u-heading-s">Upload your prescription</h3>
+<p class="flow__card-content-paragraph u-paragraph-regular">A photo or PDF, exact medicine matches, and a quick review before adding to your cart.</p>
+</div>
+</div>
+</div>
+</div>
+<div data-call-out-item="" class="flow__list-item">
+<div data-call-out-child="" data-wf--flow-card--variant="yellow" class="flow__card">
+<div class="flow__card-inner">
+<div class="flow__card-header">
+<span class="flow__card-header-title u-handwritten-big">Step #3</span>
+</div>
+<div class="flow__card-img-wrap">
+<img alt="Let care come to you" src="assets/healio/step-delivery.svg" loading="lazy" class="flow__card-img">
+</div>
+<div class="flow__card-content">
+<h3 class="flow__card-content-title u-heading-s">Let care come to you</h3>
+<p class="flow__card-content-paragraph u-paragraph-regular">Quick delivery and doctor access, built around our 10-minute goal.</p>
+</div>
+</div>
+</div>
+</div>
+<div data-call-out-item="" class="flow__list-item">
+<div data-call-out-child="" data-wf--flow-card--variant="periwinkle" class="flow__card">
+<div class="flow__card-inner">
+<div class="flow__card-header">
+<span class="flow__card-header-title u-handwritten-big">Step #4</span>
+</div>
+<div class="flow__card-img-wrap">
+<img alt="Grow a little good" src="assets/healio/step-tree.svg" loading="lazy" class="flow__card-img">
+</div>
+<div class="flow__card-content">
+<h3 class="flow__card-content-title u-heading-s">Grow a little good</h3>
+<p class="flow__card-content-paragraph u-paragraph-regular">Every 10 completed orders plants a tree. Earn points to grow even more.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flow__content-text-wrap">
+<div class="flow__content-text-outer">
+<p data-handwritten-text-inview="" class="flow__text u-handwritten-regular">Consider us your little care companion</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flow__bg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1078" data-background-animation="" class="flow__bg-svg is--desktop">
+<path d="M1036.04 224.719c46.68-18.686 94.68-27.593 145.01-17.193 69.48 14.366 110.3 57.983 128.04 125.006 15.96 60.318 6.45 120.498-1.31 180.811-8.29 64.443-17.14 128.943-21.73 193.698-3.4 47.933 9.35 93.628 35.22 135.082 24.6 39.428 58.71 63.776 105.27 70.7 51.26 7.619 100.97-1.424 150.87-11.351 44.59-8.86 89.22-18.234 134.27-23.788 37.99-4.686 76.51-2.359 112.24 14.388 64.95 30.445 87.52 98.718 76.62 164.068-9.87 59.15-42.57 105.15-84.56 145.85-44.84 43.48-98.21 75.46-148.83 111.16-30.84 21.75-60.77 44.41-86.53 71.35H1247.7c35.22-37.78 74.41-71.86 110.25-109.11 18.75-19.49 36.56-40.97 49.88-64.35 26.16-45.95 9.65-92.6-37.47-116.63-29.31-14.95-60.63-23-92.65-29.34-47.63-9.41-95.64-17.46-142.48-29.89-26.81-7.12-53.14-19.24-76.97-33.6-37.72-22.74-50.73-59.621-48.21-102.647 2.46-42.061 19.25-79.708 35.43-117.636 9.87-23.115 19.1-46.499 28.22-69.907 2.34-5.995 3.57-12.517 4.6-18.912 6.58-40.968-12.55-65.234-54.23-62.184-35.208 2.579-69.935 11.611-104.902 17.609-43.082 7.393-85.968 16.846-129.373 21.383-72.784 7.609-140.416-13.554-203.621-47.289-57.69-30.79-113.048-65.891-169.936-98.199-40.136-22.803-82.672-40.545-128.108-49.343-43.977-8.506-87.368-6.74-127.138 17.541-26.209 16.007-41.953 39.592-48.511 69.378-12.397 56.359 4.802 106.985 30.146 156.167 28.004 54.347 66.44 101.409 103.329 149.563 37.221 48.583 74.231 97.305 98.581 154.026 15.151 35.28 25.634 71.86 24.527 110.8-1.931 68.15-36.554 114.5-96.26 144.23-45.75 22.78-95.324 30.65-144.973 39.2-58.87 10.13-118.149 19.35-175.929 34.11-76.784 19.6-104.832 50.54-156.366 104.26l-188.143-192.09c6.548-.9 13.143-1.65 19.782-2.23 64.263-5.7 128.992-6.19 193.515-9.07 59.582-2.68 118.457-8.23 172.797-36.44 68.743-35.69 95.923-102.94 71.734-176.51C47.238 982.71 14 937.57-20.86 893.052c-40.325-51.507-81.776-102.294-119.092-155.941-47.12-67.745-66.267-144.502-59.071-226.985 5.782-66.292 34.986-122.322 81.434-168.708 86.136-86.027 189.43-120.689 309.992-96.782 61.552 12.208 114.972 42.82 165.548 78.705 47.349 33.599 93.841 68.447 141.911 100.971 70.388 47.621 143.971 47.529 215.775 4.92 48.318-28.674 94.065-61.87 139.754-94.725 57.434-41.309 114.359-83.274 180.648-109.788Z" fill="currentColor" stroke="currentColor">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 402 743" class="flow__bg-svg is--mobile">
+<path d="M108.059 38.845c19.902-7.966 40.364-11.762 61.82-7.33 29.616 6.125 47.017 24.718 54.58 53.289 6.801 25.713 2.748 51.366-.559 77.077-3.535 27.472-7.305 54.967-9.263 82.571-1.45 20.434 3.987 39.913 15.013 57.584 10.489 16.808 25.026 27.187 44.875 30.139 21.853 3.248 43.043-.607 64.313-4.839 19.011-3.777 38.037-7.773 57.241-10.14 16.195-1.998 32.615-1.006 47.845 6.133 27.688 12.979 37.307 42.082 32.662 69.939-4.206 25.215-18.148 44.824-36.047 62.176-19.116 18.535-41.867 32.168-63.445 47.384-20.648 14.567-40.354 30.09-53.682 52.135-6.785 11.23-11.685 23.13-10.653 36.657 1.487 19.497 13.269 33.963 32.806 40.393 17.154 5.646 34.929 5.92 52.682 5.631 22.347-.361 44.69-1.796 67.031-1.784 16.165.007 32.077 2.966 46.779 10.192 23.93 11.764 36.752 31.755 41.492 57.432 5.378 29.146-1.634 56.051-14.856 81.879-7.824 15.297-17.852 28.9-29.395 41.385l-202.407-18.505c2.186-1.021 4.338-2.103 6.412-3.316 9.029-5.283 18.325-10.576 26.072-17.481 15.77-14.051 17.306-32.639 2.855-47.998-10.769-11.443-23.415-21.547-36.557-30.238-22.785-15.075-46.799-28.272-69.905-42.868-16.882-10.667-33.059-22.486-46.149-37.817-15.68-18.363-23.425-39.066-13.07-62.435 4.931-11.127 11.785-21.994 19.984-30.945 15.457-16.868 32.879-31.91 48.754-48.411 7.994-8.308 15.585-17.468 21.265-27.435 11.151-19.586 4.112-39.472-15.976-49.714-12.494-6.374-25.847-9.806-39.497-12.508-20.301-4.011-40.768-7.443-60.736-12.742-11.425-3.035-22.65-8.202-32.809-14.323-16.082-9.695-21.625-25.417-20.553-43.758 1.05-17.93 8.208-33.979 15.105-50.147 4.204-9.854 8.142-19.822 12.029-29.8.998-2.556 1.523-5.337 1.959-8.063 2.807-17.464-5.348-27.808-23.114-26.508-15.01 1.099-29.815 4.949-44.72 7.506-18.366 3.152-36.647 7.182-55.15 9.116-28.873 3.018-55.844-4.586-81.163-17.245l.835-71.799c16.242.819 32.584-3.716 48.715-13.288 20.598-12.224 40.1-26.374 59.576-40.38 24.483-17.61 48.75-35.498 77.006-46.801Z" fill="currentColor">
+</path>
+</svg>
+</div>
+</section>
+<section class="box" id="care-story">
+<div data-scroll-start="top 85%" data-box-sequence="" data-scroll-end="bottom 80%" class="box__wrap">
+<div class="box__sticky">
+<div data-box-sequence-element="" class="box__element">
+<div class="care-bag-sequence" data-care-sequence-art=""><img src="assets/healio/bag.svg" alt="A Healio bag of care essentials"></div>
+<div class="box__logo-easter-egg">
+<div class="box__logo-easter-egg-inner">
+<div data-pop-up="" data-wf--logo-pop-up--variant="left" class="pop-up">
+<button type="button" data-pop-up-button="" aria-label="Explore Healio care" class="pop-up__button">
+<span class="pop-up__button-inner">
+<span class="pop-up__button-svg"><svg viewBox="0 0 80 80" fill="none" width="100%" aria-hidden="true"><circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="4"></circle><path d="M32 16h16v16h16v16H48v16H32V48H16V32h16z" fill="currentColor"></path></svg></span>
+</span>
+</button>
+<div class="pop-up__overlay">
+<div class="pop-up__overlay-inner">
+<div class="pop-up__overlay-bg-wrap">
+<div class="pop-up__overlay-ears">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 44 45" width="100%" class="pop-up__overlay-left-ear">
+<path fill="currentColor" d="M1.335.198c.671-.316 1.5-.254 2.186.187C27.678 16.847 39.839 36.953 44 45h-6.048c-2.382-1.604-6.964-3.674-15.652-4.814C2.999 37.666-.665 14.174.09 2.04.152 1.28.589.515 1.335.198Z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 29 80" width="100%" class="pop-up__overlay-right-ear">
+<path fill="currentColor" d="M19.388.879c.667-.771 1.647-1.018 2.559-.807.912.21 1.682.956 1.926 1.861C34.595 38.09 25.79 69.237 21.823 80h-4.188c-.17-4.22-2.739-13.318-10.975-22.064-8.493-9.099-8.88-21.913-1.063-37.23C11.221 9.603 19.091 1.266 19.388.879Z">
+</path>
+</svg>
+</div>
+<div class="pop-up__overlay-bg">
+</div>
+</div>
+<div class="pop-up__overlay-content">
+<h3 class="pop-up__overlay-title u-heading-xs">A little care for everyone.</h3>
+<div class="pop-up__overlay-content-action">
+<button data-button-alt="" data-wf--button-alt--variant="small" class="button-alt inline-link" type="button" data-care-action="shop">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Explore Healio</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pop-up__overlay-target-zone">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="box__text-wrap">
+<div class="box__text-outer">
+<p data-box-sequence-handwritten-text="" class="box__text u-handwritten-regular">From your prescription to your doorstep. A little less running around.</p>
+</div>
+</div>
+<div data-box-sequence-content="" class="box__content">
+<div class="box__header">
+<img src="assets/healio/impact-title.svg" loading="lazy" alt="A little care. A little greener." data-box-sequence-title="" class="box__header-img">
+</div>
+<div class="box__content-text-wrap">
+<div class="box__content-text-outer">
+<p data-box-sequence-text-final="" class="box__content-text u-handwritten-regular">For you, your pets &amp; our planet</p>
+</div>
+</div>
+<div class="box__action">
+<div data-box-sequence-button="" class="box__button-wrap">
+<button aria-label="Download on the App Store" data-wf--button-app-store--variant="base" class="button is--app inline-link" type="button" data-care-action="shop">Shop your essentials</button>
+</div>
+<div data-box-sequence-button="" class="box__button-wrap">
+<button aria-label="Get it on Google Play" data-wf--button-google-play--variant="base" class="button is--app inline-link" type="button" data-care-action="rewards">Our tree rewards</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-genre-interaction="" class="genre is--bright-pink">
+<div class="genre__container u-container">
+<div class="genre__inner">
+<header class="genre__header">
+<h2 class="genre__title">A little something for</h2>
+<div class="genre__text-wrap">
+<div class="genre__text-outer">
+<p data-handwritten-text-inview="" class="genre__text u-handwritten-regular">For every member of your family</p>
+</div>
+</div>
+</header>
+<div class="genre__list-wrap">
+<ul data-genre-interaction-list="" role="list" class="genre__list list-reset">
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Pain &amp; fever">
+<div class="genre__link">
+<span class="genre__link-default">Pain &amp; fever</span>
+<span class="genre__link-hover">Pain &amp; fever</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Vitamins">
+<div class="genre__link">
+<span class="genre__link-default">Vitamins</span>
+<span class="genre__link-hover">Vitamins</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="First aid">
+<div class="genre__link">
+<span class="genre__link-default">First aid</span>
+<span class="genre__link-hover">First aid</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Allergy care">
+<div class="genre__link">
+<span class="genre__link-default">Allergy care</span>
+<span class="genre__link-hover">Allergy care</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Pet supplements">
+<div class="genre__link">
+<span class="genre__link-default">Pet supplements</span>
+<span class="genre__link-hover">Pet supplements</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Vet medicines">
+<div class="genre__link">
+<span class="genre__link-default">Vet medicines</span>
+<span class="genre__link-hover">Vet medicines</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Grooming">
+<div class="genre__link">
+<span class="genre__link-default">Grooming</span>
+<span class="genre__link-hover">Grooming</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Everyday care">
+<div class="genre__link">
+<span class="genre__link-default">Everyday care</span>
+<span class="genre__link-hover">Everyday care</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Hydration">
+<div class="genre__link">
+<span class="genre__link-default">Hydration</span>
+<span class="genre__link-hover">Hydration</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="Little paws">
+<div class="genre__link has--word-break">
+<span class="genre__link-default">Little paws</span>
+<span class="genre__link-hover">Little paws</span>
+</div>
+</li>
+<li data-genre-interaction-item="" class="genre__list-item" data-care-category="and more!">
+<div class="genre__link">
+<span class="genre__link-default">and more!</span>
+<span class="genre__link-hover">and more!</span>
+</div>
+</li>
+</ul>
+<div data-genre-interaction-holding="" class="genre__holding">
+<div data-genre-interaction-scope="" class="genre__scope">
+<div data-genre-interaction-holder="" class="genre__holder">
+<div data-genre-interaction-box="" class="genre__box">
+<img src="assets/healio/hero-blister-photo.png" loading="lazy" width="408" height="629" alt="Paracetamol 650 mg" class="genre__img">
+<img src="assets/healio/h03.svg" loading="lazy" width="408" height="629" alt="ORS Electrolyte Powder" class="genre__img">
+<img src="assets/healio/hero-bottle-photo.png" loading="lazy" width="408" height="629" alt="Vitamin D3 1000 IU" class="genre__img">
+<img src="assets/healio/hero-bottle-photo.png" loading="lazy" width="408" height="629" alt="Daily Multivitamin" class="genre__img">
+<img src="assets/healio/h09.svg" loading="lazy" width="408" height="629" alt="Digital Thermometer" class="genre__img">
+<img src="assets/healio/h11.svg" loading="lazy" width="408" height="629" alt="Saline Nasal Spray" class="genre__img">
+<img src="assets/healio/h13.svg" loading="lazy" width="408" height="629" alt="Crepe Support Bandage" class="genre__img">
+<img src="assets/healio/h15.svg" loading="lazy" width="408" height="629" alt="Home First-Aid Kit" class="genre__img">
+<img src="assets/healio/p02.svg" loading="lazy" width="408" height="629" alt="Cat Multivitamin Chews" class="genre__img">
+<img src="assets/healio/p04.svg" loading="lazy" width="408" height="629" alt="Dog Calcium Tablets" class="genre__img">
+<img src="assets/healio/p06.svg" loading="lazy" width="408" height="629" alt="Dog Deworming Tablets" class="genre__img">
+</div>
+</div>
+<div data-genre-interaction-holder="" class="genre__holder">
+<div data-genre-interaction-box="" class="genre__box">
+<img src="assets/healio/hero-bottle-photo.png" loading="lazy" width="408" height="629" alt="Vitamin C 500 mg" class="genre__img">
+<img src="assets/healio/hero-bottle-photo.png" loading="lazy" width="408" height="629" alt="Calcium + D3" class="genre__img">
+<img src="assets/healio/h08.svg" loading="lazy" width="408" height="629" alt="Antiseptic Solution" class="genre__img">
+<img src="assets/healio/h10.svg" loading="lazy" width="408" height="629" alt="Adhesive Bandages" class="genre__img">
+<img src="assets/healio/h12.svg" loading="lazy" width="408" height="629" alt="Sterile Gauze Pads" class="genre__img">
+<img src="assets/healio/h14.svg" loading="lazy" width="408" height="629" alt="Hand Sanitiser" class="genre__img">
+<img src="assets/healio/p01.svg" loading="lazy" width="408" height="629" alt="Dog Multivitamin Chews" class="genre__img">
+<img src="assets/healio/p03.svg" loading="lazy" width="408" height="629" alt="Pet Omega-3 Oil" class="genre__img">
+<img src="assets/healio/p05.svg" loading="lazy" width="408" height="629" alt="Pet Probiotic Sachets" class="genre__img">
+<img src="assets/healio/p07.svg" loading="lazy" width="408" height="629" alt="Cat Deworming Tablets" class="genre__img">
+<img src="assets/healio/p09.svg" loading="lazy" width="408" height="629" alt="Cat Flea &amp; Tick Spot-On" class="genre__img">
+</div>
+</div>
+<div data-genre-interaction-holder="" class="genre__holder">
+<div data-genre-interaction-box="" class="genre__box">
+<img src="assets/healio/hero-bottle-photo.png" loading="lazy" width="408" height="629" alt="Daily Multivitamin" class="genre__img">
+<img src="assets/healio/h09.svg" loading="lazy" width="408" height="629" alt="Digital Thermometer" class="genre__img">
+<img src="assets/healio/h11.svg" loading="lazy" width="408" height="629" alt="Saline Nasal Spray" class="genre__img">
+<img src="assets/healio/h13.svg" loading="lazy" width="408" height="629" alt="Crepe Support Bandage" class="genre__img">
+<img src="assets/healio/h15.svg" loading="lazy" width="408" height="629" alt="Home First-Aid Kit" class="genre__img">
+<img src="assets/healio/p02.svg" loading="lazy" width="408" height="629" alt="Cat Multivitamin Chews" class="genre__img">
+<img src="assets/healio/p04.svg" loading="lazy" width="408" height="629" alt="Dog Calcium Tablets" class="genre__img">
+<img src="assets/healio/p06.svg" loading="lazy" width="408" height="629" alt="Dog Deworming Tablets" class="genre__img">
+<img src="assets/healio/p08.svg" loading="lazy" width="408" height="629" alt="Dog Flea &amp; Tick Spot-On" class="genre__img">
+<img src="assets/healio/p10.svg" loading="lazy" width="408" height="629" alt="Gentle Pet Shampoo" class="genre__img">
+<img src="assets/healio/p12.svg" loading="lazy" width="408" height="629" alt="Pet Wound Care Spray" class="genre__img">
+</div>
+</div>
+<div data-genre-interaction-holder="" class="genre__holder">
+<div data-genre-interaction-box="" class="genre__box">
+<img src="assets/healio/h10.svg" loading="lazy" width="408" height="629" alt="Adhesive Bandages" class="genre__img">
+<img src="assets/healio/h12.svg" loading="lazy" width="408" height="629" alt="Sterile Gauze Pads" class="genre__img">
+<img src="assets/healio/h14.svg" loading="lazy" width="408" height="629" alt="Hand Sanitiser" class="genre__img">
+<img src="assets/healio/p01.svg" loading="lazy" width="408" height="629" alt="Dog Multivitamin Chews" class="genre__img">
+<img src="assets/healio/p03.svg" loading="lazy" width="408" height="629" alt="Pet Omega-3 Oil" class="genre__img">
+<img src="assets/healio/p05.svg" loading="lazy" width="408" height="629" alt="Pet Probiotic Sachets" class="genre__img">
+<img src="assets/healio/p07.svg" loading="lazy" width="408" height="629" alt="Cat Deworming Tablets" class="genre__img">
+<img src="assets/healio/p09.svg" loading="lazy" width="408" height="629" alt="Cat Flea &amp; Tick Spot-On" class="genre__img">
+<img src="assets/healio/p11.svg" loading="lazy" width="408" height="629" alt="Pet Ear Care Cleanser" class="genre__img">
+<img src="assets/healio/p13.svg" loading="lazy" width="408" height="629" alt="Paw Protection Balm" class="genre__img">
+<img src="assets/healio/p15.svg" loading="lazy" width="408" height="629" alt="Digital Pet Thermometer" class="genre__img">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="genre__easter-egg">
+<div data-pop-up="" data-wf--logo-pop-up--variant="right" class="pop-up">
+<button type="button" data-pop-up-button="" aria-label="Explore Healio care" class="pop-up__button">
+<span class="pop-up__button-inner">
+<span class="pop-up__button-svg"><svg viewBox="0 0 80 80" fill="none" width="100%" aria-hidden="true"><circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="4"></circle><path d="M32 16h16v16h16v16H48v16H32V48H16V32h16z" fill="currentColor"></path></svg></span>
+</span>
+</button>
+<div class="pop-up__overlay">
+<div class="pop-up__overlay-inner">
+<div class="pop-up__overlay-bg-wrap">
+<div class="pop-up__overlay-ears">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 44 45" width="100%" class="pop-up__overlay-left-ear">
+<path fill="currentColor" d="M1.335.198c.671-.316 1.5-.254 2.186.187C27.678 16.847 39.839 36.953 44 45h-6.048c-2.382-1.604-6.964-3.674-15.652-4.814C2.999 37.666-.665 14.174.09 2.04.152 1.28.589.515 1.335.198Z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 29 80" width="100%" class="pop-up__overlay-right-ear">
+<path fill="currentColor" d="M19.388.879c.667-.771 1.647-1.018 2.559-.807.912.21 1.682.956 1.926 1.861C34.595 38.09 25.79 69.237 21.823 80h-4.188c-.17-4.22-2.739-13.318-10.975-22.064-8.493-9.099-8.88-21.913-1.063-37.23C11.221 9.603 19.091 1.266 19.388.879Z">
+</path>
+</svg>
+</div>
+<div class="pop-up__overlay-bg">
+</div>
+</div>
+<div class="pop-up__overlay-content">
+<h3 class="pop-up__overlay-title u-heading-xs">A little care for everyone.</h3>
+<div class="pop-up__overlay-content-action">
+<button data-button-alt="" data-wf--button-alt--variant="small" class="button-alt inline-link" type="button" data-care-action="shop">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Explore Healio</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pop-up__overlay-target-zone">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-benefits="" class="benefits">
+<div class="benefits__container">
+<div class="benefits__inner">
+<div class="benefits__content">
+<img src="assets/healio/why.svg" loading="lazy" width="600" height="218" alt="Why Healio?" class="benefits__logo-text">
+<img src="assets/healio/mark-black.svg" loading="lazy" width="568" height="568" alt="Healio care mark" class="benefits__logo">
+</div>
+<div data-momentum-hover="" class="benefits__label-wrap">
+<div data-momentum-hover-element="" class="benefits__label is--first">
+<div data-benefits-item="" data-momentum-hover-target="" class="benefits__label-inner">
+<div data-canvas-matter-label-text="" class="benefits__label-text u-heading-l">Human &amp; pet care</div>
+</div>
+</div>
+<div data-momentum-hover-element="" class="benefits__label is--second">
+<div data-benefits-item="" data-momentum-hover-target="" class="benefits__label-inner is--orange">
+<div data-canvas-matter-label-text="" class="benefits__label-text u-heading-l">10-minute goal</div>
+</div>
+</div>
+<div data-momentum-hover-element="" class="benefits__label is--third">
+<div data-benefits-item="" data-momentum-hover-target="" class="benefits__label-inner is--periwinkle">
+<div data-canvas-matter-label-text="" class="benefits__label-text u-heading-l">Compare prices</div>
+</div>
+</div>
+<div data-momentum-hover-element="" class="benefits__label is--fourth">
+<div data-benefits-item="" data-momentum-hover-target="" class="benefits__label-inner is--cyan">
+<div data-canvas-matter-label-text="" class="benefits__label-text u-heading-l">Prescription to cart</div>
+</div>
+</div>
+<div data-momentum-hover-element="" class="benefits__label is--fifth">
+<div data-benefits-item="" data-momentum-hover-target="" class="benefits__label-inner is--olive">
+<div data-canvas-matter-label-text="" class="benefits__label-text u-heading-l">Care that plants trees</div>
+</div>
+</div>
+</div>
+<div class="benefits__bg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 1080" data-background-animation="" class="benefits__bg-svg is--desktop">
+<path d="M622.956 92.984c69.68-13.332 124.091 11.33 166.146 66.451 37.834 49.612 52.094 108.845 68.023 167.531 17.015 62.708 33.544 125.678 54.097 187.256 15.213 45.582 44.491 82.912 84.258 111.302 37.83 27.001 78.65 36.435 124.32 25.002 50.27-12.591 92.73-39.978 135.02-68.255 37.81-25.261 75.44-51.01 114.93-73.391 33.31-18.877 69.78-31.477 109.2-29.686 71.66 3.254 118.64 57.683 133.6 122.222 13.54 58.421.94 113.436-22.27 167.116-24.77 57.338-61.83 107.317-94.92 159.675-31.66 50.112-60.42 101.453-69.5 161.203-4.62 30.42-4.55 60.61 9.84 89 14.94 29.48 39.11 48.49 69.45 55.47-81.24 30.12-208.99 79.29-324.5 122.86-38.79-25.16-64.29-60.23-63.06-111.3.7-28.55 5.79-58.25 15.52-85.01 18.34-50.44 42.58-98.69 62.16-148.71 9.86-25.18 18.08-51.846 21.44-78.548 6.57-52.461-26.55-89.231-79.28-93.381-32.8-2.591-64.81 1.965-96.82 8.372-47.599 9.543-95.035 20.489-143.067 26.944-27.486 3.684-56.451 2.571-83.964-1.568-43.559-6.563-69.693-35.655-83.846-76.364-13.828-39.799-12.733-81.006-12.31-122.239.259-25.129-.162-50.268-.701-75.384-.135-6.434-1.493-12.93-2.997-19.229-9.605-40.368-36.568-55.459-73.901-36.683-31.54 15.866-60.163 37.506-90.168 56.437-36.968 23.326-72.964 48.481-111.324 69.293-64.323 34.899-134.904 41.246-206.21 34.284-65.083-6.353-129.663-17.582-194.586-25.645-45.808-5.696-91.896-5.797-137.238 3.474-43.882 8.982-83.289 27.227-110.731 64.886-18.082 24.823-23.594 52.639-18.247 82.666 10.129 56.81 45.402 96.993 87.647 132.721C-94.353 1001.24-40.827 1030 11.69 1060.35c52.987 30.63 105.833 61.47 150.046 104.54 27.508 26.8 51.194 56.57 65.086 92.97 24.309 63.69 10.075 119.77-33.697 170.09a258 258 0 0 1-4.983 5.57l-241.336-31.48c5.88-39.47-6.454-79.83-36.872-115.17-37.549-43.63-85.539-72.6-134.789-100.38-56.973-32.14-114.712-63.18-169.726-98.45-69.469-44.54-116.549-108.116-141.485-187.068-20.043-63.453-14.519-126.396 10.628-187.033 46.63-112.453 128.778-184.025 249.305-208.106 61.535-12.29 122.605-4.466 183.068 9.317 56.605 12.908 112.898 27.297 169.758 38.935 83.258 17.039 151.197-11.223 201.213-78.079 33.656-44.99 63.206-93.172 92.831-141.018 37.24-60.153 73.756-120.717 124.837-170.592 35.975-35.14 76.904-61.747 127.382-71.412" fill="currentColor" stroke="currentColor" opacity=".5">
+</path>
+<path d="M639.856 543.657c37.333-18.775 64.31-3.688 73.902 36.683 1.487 6.29 2.845 12.787 2.992 19.218.543 25.128.965 50.267.701 75.383-.422 41.233-1.517 82.44 12.312 122.24 14.153 40.709 40.298 69.797 83.857 76.359 27.513 4.14 56.478 5.253 83.964 1.568 48.032-6.454 95.464-17.413 143.066-26.944 31.99-6.403 64.02-10.962 96.82-8.372 52.75 4.146 85.86 40.904 79.28 93.369-3.36 26.701-11.58 53.368-21.44 78.549-19.59 50.03-43.84 98.27-62.17 148.71-9.73 26.76-14.82 56.45-15.51 84.99-1.24 51.09 24.26 86.16 63.06 111.32-68.89 25.98-133.43 49.98-181.16 66.77-16.458-30.02-21.454-63.6-17.627-98.22 5.421-48.96 15.437-97.43 24.427-145.94 7.14-38.48 13.4-76.73 7.59-116.12-8.39-56.91-56.908-109.587-123.034-105.734-33.859 1.974-65.045 13.287-96.708 24.223-30.14 10.406-61.045 20.841-92.433 24.881-46.346 5.96-83.604-12.5-108.187-54.086-19.571-33.127-25.751-69.564-29.062-106.964-2.666-30.169-3.029-60.765-14.966-89.377-10.306-24.705-28.009-33.475-54.038-28.224-19.269 3.895-34.639 13.869-46.863 28.482-13.885 16.611-26.908 33.95-39.942 51.251-40.002 53.055-92.354 73.198-156.813 56.577-28.843-7.434-56.675-18.865-84.849-28.818-42.496-15.017-84.505-32.025-130.67-31.798-29.872.151-59.682 3.217-84.253 21.687-42.549 31.983-45.887 85.942-.264 113.45 24.344 14.675 50.13 27.67 76.613 37.928 58.981 22.852 119.504 41.802 178.143 65.472 86.292 34.83 155.98 89.5 196.065 176.48 25.095 54.48 37.693 110.51 24.633 170.54-5.719 26.28-14.355 50.27-25.59 72.18l-213.539-27.85c1.68-1.82 3.34-3.68 4.978-5.56 43.771-50.32 58.007-106.4 33.698-170.09-13.892-36.4-37.579-66.17-65.087-92.97-44.226-43.07-97.072-73.91-150.047-104.54-52.516-30.36-106.047-59.12-152.723-98.594-42.241-35.716-77.518-75.911-87.646-132.722-5.36-30.023.152-57.839 18.247-82.666 27.445-37.646 66.853-55.892 110.735-64.874 45.343-9.271 91.43-9.169 137.238-3.473 64.923 8.063 129.516 19.288 194.586 25.645 71.301 6.949 141.883.601 206.21-34.285 38.363-20.799 74.357-45.967 111.337-69.296 30.005-18.931 58.627-40.572 90.167-56.438" fill="currentColor" stroke="currentColor">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 402 465" class="benefits__bg-svg is--mobile">
+<path d="M6.084 110.368c25.96-4.967 46.231 4.22 61.898 24.756 14.096 18.482 19.408 40.551 25.342 62.415 6.34 23.361 12.497 46.82 20.154 69.761 5.667 16.982 16.576 30.889 31.391 41.466 14.092 10.06 29.303 13.574 46.316 9.315 18.729-4.691 34.547-14.895 50.302-25.429 14.084-9.411 28.107-19.004 42.819-27.342 12.406-7.033 25.995-11.727 40.679-11.06 26.697 1.213 44.203 21.491 49.775 45.535 5.042 21.764.348 42.261-8.296 62.259-9.23 21.362-23.036 39.982-35.364 59.488-11.795 18.669-22.51 37.796-25.893 60.054a97 97 0 0 0-.661 5.269l-103.095 7.627c5.807-13.994 12.327-27.726 17.851-41.836 3.673-9.382 6.736-19.317 7.986-29.265 2.449-19.544-9.889-33.244-29.534-34.79-12.22-.965-24.149.733-36.073 3.119-17.732 3.556-35.405 7.635-53.299 10.039-10.24 1.373-21.031.958-31.281-.584-16.228-2.445-25.964-13.284-31.237-28.45-5.151-14.827-4.743-30.179-4.586-45.54.097-9.362-.06-18.728-.261-28.085-.05-2.397-.556-4.817-1.117-7.164-3.578-15.039-13.623-20.661-27.532-13.666C1.4 283.778-8.622 291.169-19 297.865V119.724c7.653-4.369 15.949-7.607 25.084-9.356" fill="currentColor" stroke="currentColor" opacity=".5">
+</path>
+<path d="M12.38 278.266c13.909-6.995 23.96-1.374 27.533 13.666.554 2.343 1.06 4.764 1.115 7.16.203 9.361.36 18.727.261 28.084-.157 15.361-.565 30.714 4.587 45.541 5.273 15.166 15.013 26.002 31.241 28.447 10.25 1.542 21.042 1.958 31.281.585 17.895-2.405 35.566-6.488 53.299-10.039 11.92-2.385 23.853-4.083 36.074-3.118 19.649 1.545 31.985 15.239 29.532 34.784-1.25 9.947-4.313 19.883-7.987 29.265-5.527 14.112-12.048 27.846-17.853 41.841l-49.818 3.685c1.064-8.698 1.407-17.439.094-26.336-3.125-21.202-21.201-40.828-45.837-39.392-12.613.735-24.232 4.95-36.028 9.024-11.229 3.877-22.743 7.765-34.436 9.271-17.267 2.219-31.147-4.658-40.305-20.151-7.291-12.341-9.594-25.917-10.827-39.85-.786-8.889-1.036-17.878-3.306-26.521V297.88c10.382-6.698 20.408-14.094 31.38-19.614" fill="currentColor" stroke="currentColor">
+</path>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<section class="faq is--bg-white" id="questions">
+<div class="faq__container u-container">
+<div class="faq__inner">
+<header class="faq__header">
+<h2 class="faq__title u-heading-l">Little questions. Clear answers.</h2>
+</header>
+<div class="faq__content">
+<div class="accordion collection">
+<div role="list" class="accordion__list collection-items"><details data-accordion="" class="accordion__details">
+<summary data-accordion-summary="" class="accordion__summary">
+<span class="accordion__title-wrap">
+<h3 class="accordion__title u-paragraph-large">How does prescription-to-cart work?</h3>
+<span aria-hidden="true" class="accordion__icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-plus">
+<path fill="currentColor" d="M7.84 18.8v-7H1.12V7.88h6.72V.96h4.32v6.92h6.76v3.92h-6.76v7z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-minus">
+<path fill="currentColor" d="M3.8 7.9h12.4v4.04H3.8z">
+</path>
+</svg>
+</span>
+</span>
+</summary>
+<div data-accordion-content="" class="accordion__content">
+<div class="accordion__content-inner"><p class="u-paragraph-regular">Upload a clear JPG, PNG or PDF and choose human or pet care. We read the written medicine names and match exact catalogue items. Review the matches and quantities, then add them to your cart. Unclear items stay unmatched.</p></div>
+</div>
+</details><details data-accordion="" class="accordion__details">
+<summary data-accordion-summary="" class="accordion__summary">
+<span class="accordion__title-wrap">
+<h3 class="accordion__title u-paragraph-large">Can I get medicines and a doctor in 10 minutes?</h3>
+<span aria-hidden="true" class="accordion__icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-plus">
+<path fill="currentColor" d="M7.84 18.8v-7H1.12V7.88h6.72V.96h4.32v6.92h6.76v3.92h-6.76v7z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-minus">
+<path fill="currentColor" d="M3.8 7.9h12.4v4.04H3.8z">
+</path>
+</svg>
+</span>
+</span>
+</summary>
+<div data-accordion-content="" class="accordion__content">
+<div class="accordion__content-inner"><p class="u-paragraph-regular">That’s the Healio goal: quicker everyday medicine delivery and doctor access for humans and pets. Availability depends on your location and the care needed. This preview prepares requests; it does not confirm delivery or a medical appointment.</p></div>
+</div>
+</details><details data-accordion="" class="accordion__details">
+<summary data-accordion-summary="" class="accordion__summary">
+<span class="accordion__title-wrap">
+<h3 class="accordion__title u-paragraph-large">How do the tree rewards work?</h3>
+<span aria-hidden="true" class="accordion__icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-plus">
+<path fill="currentColor" d="M7.84 18.8v-7H1.12V7.88h6.72V.96h4.32v6.92h6.76v3.92h-6.76v7z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-minus">
+<path fill="currentColor" d="M3.8 7.9h12.4v4.04H3.8z">
+</path>
+</svg>
+</span>
+</span>
+</summary>
+<div data-accordion-content="" class="accordion__content">
+<div class="accordion__content-inner"><p class="u-paragraph-regular">Every 10 completed orders earns one tree planted for you. You also earn 5 points for every ₹100 spent. Redeem 50 points to plant an additional tree. Points are credited after a completed order, and planting is confirmed separately.</p></div>
+</div>
+</details><details data-accordion="" class="accordion__details">
+<summary data-accordion-summary="" class="accordion__summary">
+<span class="accordion__title-wrap">
+<h3 class="accordion__title u-paragraph-large">Can I compare prices before adding to my cart?</h3>
+<span aria-hidden="true" class="accordion__icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-plus">
+<path fill="currentColor" d="M7.84 18.8v-7H1.12V7.88h6.72V.96h4.32v6.92h6.76v3.92h-6.76v7z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-minus">
+<path fill="currentColor" d="M3.8 7.9h12.4v4.04H3.8z">
+</path>
+</svg>
+</span>
+</span>
+</summary>
+<div data-accordion-content="" class="accordion__content">
+<div class="accordion__content-inner"><p class="u-paragraph-regular">Yes. Open Compare on any product to see its price alongside other retailers. The current catalogue uses clearly labelled sample prices; check the retailer for its current offer, stock, delivery and pack size.</p></div>
+</div>
+</details><details data-accordion="" class="accordion__details">
+<summary data-accordion-summary="" class="accordion__summary">
+<span class="accordion__title-wrap">
+<h3 class="accordion__title u-paragraph-large">Is pet care separate from human care?</h3>
+<span aria-hidden="true" class="accordion__icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-plus">
+<path fill="currentColor" d="M7.84 18.8v-7H1.12V7.88h6.72V.96h4.32v6.92h6.76v3.92h-6.76v7z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="100%" class="accordion__icon-minus">
+<path fill="currentColor" d="M3.8 7.9h12.4v4.04H3.8z">
+</path>
+</svg>
+</span>
+</span>
+</summary>
+<div data-accordion-content="" class="accordion__content">
+<div class="accordion__content-inner"><p class="u-paragraph-regular">Yes. The care shelf and prescription uploader separate human and pet products. Veterinary prescription products require review. Never swap human and pet medicines or substitute one pet species’ medicine for another’s.</p></div>
+</div>
+</details></div>
+</div>
+<button data-button-alt="" data-wf--button-alt--variant="base" class="button-alt inline-link" type="button" data-care-action="rewards">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Explore tree rewards</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+<div class="faq__logo-easter-egg">
+<div data-pop-up="" data-wf--logo-pop-up--variant="left" class="pop-up">
+<button type="button" data-pop-up-button="" aria-label="Explore Healio care" class="pop-up__button">
+<span class="pop-up__button-inner">
+<span class="pop-up__button-svg"><svg viewBox="0 0 80 80" fill="none" width="100%" aria-hidden="true"><circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="4"></circle><path d="M32 16h16v16h16v16H48v16H32V48H16V32h16z" fill="currentColor"></path></svg></span>
+</span>
+</button>
+<div class="pop-up__overlay">
+<div class="pop-up__overlay-inner">
+<div class="pop-up__overlay-bg-wrap">
+<div class="pop-up__overlay-ears">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 44 45" width="100%" class="pop-up__overlay-left-ear">
+<path fill="currentColor" d="M1.335.198c.671-.316 1.5-.254 2.186.187C27.678 16.847 39.839 36.953 44 45h-6.048c-2.382-1.604-6.964-3.674-15.652-4.814C2.999 37.666-.665 14.174.09 2.04.152 1.28.589.515 1.335.198Z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 29 80" width="100%" class="pop-up__overlay-right-ear">
+<path fill="currentColor" d="M19.388.879c.667-.771 1.647-1.018 2.559-.807.912.21 1.682.956 1.926 1.861C34.595 38.09 25.79 69.237 21.823 80h-4.188c-.17-4.22-2.739-13.318-10.975-22.064-8.493-9.099-8.88-21.913-1.063-37.23C11.221 9.603 19.091 1.266 19.388.879Z">
+</path>
+</svg>
+</div>
+<div class="pop-up__overlay-bg">
+</div>
+</div>
+<div class="pop-up__overlay-content">
+<h3 class="pop-up__overlay-title u-heading-xs">A little care for everyone.</h3>
+<div class="pop-up__overlay-content-action">
+<button data-button-alt="" data-wf--button-alt--variant="small" class="button-alt inline-link" type="button" data-care-action="shop">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Explore Healio</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pop-up__overlay-target-zone">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="faq__bg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1919 1032" data-background-animation="" class="faq__bg-svg is--desktop">
+<path d="M1020.68 122.72c46.69-18.686 94.68-27.594 145.02-17.194 69.47 14.366 110.29 57.983 128.03 125.006 15.96 60.318 6.45 120.498-1.31 180.811-8.29 64.443-17.13 128.943-21.73 193.698-3.4 47.933 9.35 93.629 35.22 135.083 24.6 39.428 58.71 63.775 105.27 70.699 51.26 7.619 100.97-1.423 150.87-11.35 44.59-8.86 89.22-18.234 134.27-23.788 38-4.687 76.51-2.36 112.24 14.387 64.95 30.446 87.52 98.719 76.62 164.066-9.87 59.152-42.57 105.152-84.56 145.852-44.84 43.48-98.21 75.46-148.83 111.16-48.44 34.17-94.66 70.58-125.93 122.3-15.92 26.34-27.41 54.25-24.99 85.99 3.49 45.74 31.13 79.67 76.96 94.75 163.65 53.87 400.02-1.71 550.17-63.19 1.62-.66 3.29-1.33 5-2.01v198.97c-247.62 111.02-459.19 118.91-579.5 77.54-116.22-39.96-259.45-123.39-341.49-219.49-36.79-43.08-54.96-91.64-30.67-146.46 11.57-26.1 27.65-51.6 46.88-72.59 36.26-39.57 77.13-74.86 114.37-113.57 18.76-19.49 36.56-40.97 49.89-64.35 26.16-45.95 9.64-92.6-37.48-116.625-29.31-14.953-60.63-23.004-92.65-29.342-47.63-9.409-95.64-17.461-142.48-29.89-26.8-7.121-53.13-19.242-76.97-33.601-37.72-22.742-50.723-59.623-48.21-102.648 2.466-42.062 19.26-79.709 35.43-117.637 9.87-23.115 19.1-46.499 28.22-69.906 2.34-5.996 3.58-12.518 4.6-18.913 6.58-40.968-12.55-65.234-54.22-62.184-35.216 2.579-69.943 11.611-104.909 17.609-43.082 7.393-85.969 16.846-129.373 21.383-72.784 7.609-140.417-13.554-203.623-47.289-57.689-30.79-113.048-65.891-169.935-98.199-40.136-22.803-82.672-40.544-128.109-49.342-43.977-8.505-87.366-6.741-127.136 17.54-26.209 16.007-41.953 39.593-48.511 69.378-12.397 56.359 4.801 106.985 30.146 156.167 28.003 54.347 66.438 101.409 103.328 149.563 37.221 48.583 74.232 97.305 98.582 154.025 15.151 35.286 25.632 71.858 24.526 110.811-1.931 68.14-36.553 114.49-96.26 144.22-45.749 22.78-95.324 30.65-144.973 39.2-58.87 10.13-118.15 19.35-175.93 34.11-80.643 20.58-107.526 53.68-164.322 112.54a639 639 0 0 0-16.882 18.19l-132.568-221.71c60.66-4.84 121.702-5.43 182.561-8.15 59.581-2.68 118.458-8.23 172.798-36.44 68.743-35.69 95.922-102.94 71.732-176.511C31.88 880.71-1.357 835.57-36.217 791.052c-40.324-51.507-81.777-102.294-119.093-155.941-47.119-67.745-66.267-144.502-59.071-226.985 5.782-66.292 34.988-122.322 81.436-168.708 86.136-86.027 189.43-120.687 309.991-96.781 61.551 12.208 114.972 42.819 165.548 78.704 47.348 33.599 93.84 68.447 141.911 100.971 70.388 47.621 143.971 47.529 215.775 4.92 48.319-28.674 94.064-61.87 139.753-94.725 57.435-41.309 114.36-83.273 180.647-109.787" fill="currentColor" stroke="currentColor">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 402 778" class="faq__bg-svg is--mobile">
+<path d="M162.797 94.263c-25.166-5.2-49.164-.746-72.508 8.597-33.143 13.257-61.606 34.239-90.324 54.893-22.844 16.428-45.717 33.026-69.876 47.363-21.555 12.791-43.431 17.918-65.089 14.821v81.369l.357.193c31.603 16.867 65.419 27.449 101.81 23.644 21.703-2.268 43.146-6.995 64.687-10.691 17.484-2.999 34.847-7.515 52.453-8.805 20.838-1.525 30.404 10.608 27.111 31.092-.511 3.197-1.128 6.458-2.297 9.456-4.56 11.704-9.179 23.397-14.11 34.954-8.09 18.964-16.484 37.788-17.717 58.818-1.256 21.513 5.244 39.954 24.107 51.324 11.915 7.18 25.081 13.24 38.482 16.8 23.422 6.215 47.428 10.241 71.24 14.946 16.01 3.168 31.671 7.194 46.326 14.67 23.561 12.013 31.818 35.338 18.738 58.311-6.662 11.691-15.565 22.433-24.941 32.178-18.621 19.355-39.056 36.998-57.185 56.783-9.617 10.498-17.655 23.244-23.439 36.296-12.146 27.41-3.062 51.693 15.33 73.23 15.353 17.983 34.327 31.845 54.128 44.357 101.513 64.124 188.191 91.083 312.42 99.638 30.927 2.13 75.519 26.342 60.311-56.074-5.559-30.117-20.599-53.564-48.667-67.362-17.244-8.476-35.907-11.948-54.867-11.956-26.204-.014-52.411 1.67-78.622 2.094-20.823.338-41.672.017-61.792-6.606-22.915-7.542-36.736-24.508-38.48-47.377-1.209-15.867 4.539-29.824 12.496-42.995 15.633-25.858 38.746-44.065 62.964-61.15 25.31-17.848 51.995-33.839 74.416-55.579 20.994-20.352 37.347-43.351 42.281-72.926 5.448-32.673-5.834-66.81-38.31-82.032-17.864-8.374-37.123-9.538-56.119-7.195-22.525 2.777-44.84 7.464-67.138 11.894-24.947 4.964-49.802 9.485-75.433 5.676-23.282-3.462-40.334-15.636-52.636-35.35-12.933-20.727-19.309-43.575-17.609-67.542 2.297-32.377 6.718-64.627 10.865-96.849 3.878-30.156 8.633-60.246.656-90.405-8.871-33.511-29.282-55.32-64.019-62.503" fill="currentColor" stroke="currentColor">
+</path>
+</svg>
+</div>
+</section>
+<section data-tagline-curve="" class="gift" id="prescription-help">
+<header class="tagline-curve">
+<div class="tagline-curve__header">
+<h2 data-tagline-curve-reference="" class="tagline-curve__title u-screen-reader">Your prescription. Our little job.</h2>
+</div>
+<div class="tagline-curve__wrap">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 288" fill="none" data-tagline-curve-svg="" class="tagline-curve__svg">
+<path d="M-165.5 288 C33.686 173 810 0 1304 0 C1797.99 0 2262.5 178.181 2741.5 272" id="path" stroke="none">
+</path>
+<text id="text" data-tagline-curve-text="">
+<textPath id="textpath" href="#path" startOffset="100%" text-anchor="start">Your prescription. Our little job.</textPath>
+</text>
+</svg>
+</div>
+</header>
+<div class="gift__container u-container">
+<div data-gift="" class="gift__inner">
+<div class="gift__content">
+<div class="gift__content-top">
+<p class="gift__content-paragraph u-paragraph-medium">Skip the search. Upload a clear photo or PDF, and we’ll find the exact matches. You check the quantities, we build your cart. A little less typing. A lot more care.</p>
+<button data-button-alt="" data-wf--button-alt--variant="base" class="button-alt inline-link" type="button" data-care-action="prescription">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Upload prescription</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+<div class="gift__content-bottom">
+<div class="gift__content-handwritten-wrap">
+<div class="gift__content-handwritten-outer">
+<p data-handwritten-text-inview="" class="gift__content-handwritten u-handwritten-regular">For humans &amp; little paws</p>
+</div>
+</div>
+<div class="gift__content-box-wrap">
+<div class="gift__content-box">
+<img src="assets/healio/step-explore.svg" loading="lazy" width="104" height="104" alt="Find" class="gift__content-box-img">
+</div>
+<div class="gift__content-box">
+<img src="assets/healio/step-prescription.svg" loading="lazy" width="104" height="104" alt="Review" class="gift__content-box-img">
+</div>
+<div class="gift__content-box">
+<img src="assets/healio/step-delivery.svg" loading="lazy" width="104" height="104" alt="Deliver" class="gift__content-box-img">
+</div>
+<div class="gift__content-box">
+<img src="assets/healio/step-tree.svg" loading="lazy" width="104" height="104" alt="Grow" class="gift__content-box-img">
+</div>
+</div>
+</div>
+</div>
+<div class="gift__visual">
+<img class="gift__visual-img" src="assets/healio/prescription.svg" alt="Prescription matched to your care cart" data-gift-item="" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+<section class="badge">
+<div class="badge__container">
+<div data-badge="" class="badge__inner">
+<div data-badge-item="" class="badge__item is--first">
+<div class="badge__item-title-outer">
+<span class="badge__item-title">Every 10 orders, we plant a tree for you.</span>
+</div>
+<div class="badge__item-bg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 2011 145" width="100%" class="badge__item-bg-svg">
+<g fill="currentColor" clip-path="url(#a)">
+<path d="M522.714 32.133C534.929-7.994 565.736-17.48 603.542 2.98c5.886 3.193 11.838 6.62 16.876 10.891 19.662 16.71 39.246 33.517 58.324 50.81 31.328 28.382 62.157 57.239 102.545 74.207a178 178 0 0 0 16.8 6.112l-297.999.001q.803-4.204 1.63-8.401c6.872-34.866 10.678-70.564 20.996-104.467M1304.23 0c13.85 30.538 27.44 61.18 43.29 90.735 10.34 19.282 23.9 37.752 39.21 54.266L1227.85 145c-12.02-12.149-25.07-23.381-39.89-33.111-49.63-32.602-124.63-32.93-168.83 18.126-4.2 4.853-8.08 9.857-11.72 14.985H871.583c9.615-3.528 18.995-8.649 28.068-15.546 22.791-17.333 44.297-37.79 61.068-60.43C977.283 46.647 992.605 23.429 1007.61 0zM2056.78 0c5.35 17.74 8.57 36.296 11.93 54.504 1.02 5.551 1.67 11.168 2.15 16.81l-37 73.686h-400.09c16.99-10.341 33.39-21.603 49.44-33.287 50.15-36.51 98.13-75.785 148.68-111.712z">
+</path>
+</g>
+<defs>
+<clipPath id="a">
+<path fill="currentColor" d="m.042 0 2010.74.578-.042 144L0 144z">
+</path>
+</clipPath>
+</defs>
+</svg>
+</div>
+</div>
+<div data-badge-item="" class="badge__item is--second">
+<div class="badge__item-title-outer">
+<span class="badge__item-title">₹100 spent = 5 points. 50 points = a tree.</span>
+</div>
+<div class="badge__item-bg is--blue">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 2011 145" width="100%" class="badge__item-bg-svg">
+<g fill="currentColor" clip-path="url(#a)">
+<path d="M522.714 32.133C534.929-7.994 565.736-17.48 603.542 2.98c5.886 3.193 11.838 6.62 16.876 10.891 19.662 16.71 39.246 33.517 58.324 50.81 31.328 28.382 62.157 57.239 102.545 74.207a178 178 0 0 0 16.8 6.112l-297.999.001q.803-4.204 1.63-8.401c6.872-34.866 10.678-70.564 20.996-104.467M1304.23 0c13.85 30.538 27.44 61.18 43.29 90.735 10.34 19.282 23.9 37.752 39.21 54.266L1227.85 145c-12.02-12.149-25.07-23.381-39.89-33.111-49.63-32.602-124.63-32.93-168.83 18.126-4.2 4.853-8.08 9.857-11.72 14.985H871.583c9.615-3.528 18.995-8.649 28.068-15.546 22.791-17.333 44.297-37.79 61.068-60.43C977.283 46.647 992.605 23.429 1007.61 0zM2056.78 0c5.35 17.74 8.57 36.296 11.93 54.504 1.02 5.551 1.67 11.168 2.15 16.81l-37 73.686h-400.09c16.99-10.341 33.39-21.603 49.44-33.287 50.15-36.51 98.13-75.785 148.68-111.712z">
+</path>
+</g>
+<defs>
+<clipPath id="a">
+<path fill="currentColor" d="m.042 0 2010.74.578-.042 144L0 144z">
+</path>
+</clipPath>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-emoji-rain-type-2="trophy" data-emoji-rain="" data-emoji-rain-type-1="party" class="choice is--outer-clip is--bg-yellow" id="impact">
+<div class="choice__container">
+<div class="choice__inner">
+<div class="choice__header">
+<div class="choice__header-container u-container">
+<div class="choice__easter-egg">
+<div data-pop-up="" data-wf--logo-pop-up--variant="right-bottom" class="pop-up">
+<button type="button" data-pop-up-button="" aria-label="Explore Healio care" class="pop-up__button">
+<span class="pop-up__button-inner">
+<span class="pop-up__button-svg"><svg viewBox="0 0 80 80" fill="none" width="100%" aria-hidden="true"><circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="4"></circle><path d="M32 16h16v16h16v16H48v16H32V48H16V32h16z" fill="currentColor"></path></svg></span>
+</span>
+</button>
+<div class="pop-up__overlay">
+<div class="pop-up__overlay-inner">
+<div class="pop-up__overlay-bg-wrap">
+<div class="pop-up__overlay-ears">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 44 45" width="100%" class="pop-up__overlay-left-ear">
+<path fill="currentColor" d="M1.335.198c.671-.316 1.5-.254 2.186.187C27.678 16.847 39.839 36.953 44 45h-6.048c-2.382-1.604-6.964-3.674-15.652-4.814C2.999 37.666-.665 14.174.09 2.04.152 1.28.589.515 1.335.198Z">
+</path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 29 80" width="100%" class="pop-up__overlay-right-ear">
+<path fill="currentColor" d="M19.388.879c.667-.771 1.647-1.018 2.559-.807.912.21 1.682.956 1.926 1.861C34.595 38.09 25.79 69.237 21.823 80h-4.188c-.17-4.22-2.739-13.318-10.975-22.064-8.493-9.099-8.88-21.913-1.063-37.23C11.221 9.603 19.091 1.266 19.388.879Z">
+</path>
+</svg>
+</div>
+<div class="pop-up__overlay-bg">
+</div>
+</div>
+<div class="pop-up__overlay-content">
+<h3 class="pop-up__overlay-title u-heading-xs">A little care for everyone.</h3>
+<div class="pop-up__overlay-content-action">
+<button data-button-alt="" data-wf--button-alt--variant="small" class="button-alt inline-link" type="button" data-care-action="shop">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Explore Healio</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pop-up__overlay-target-zone">
+</div>
+</div>
+</div>
+</div>
+<div class="choice__header-content">
+<h2 class="choice__title u-heading-l">Little orders. Growing forests.</h2>
+<p class="choice__paragraph u-paragraph-large">A little care for your family. A little good for the planet. Every completed order brings your next tree closer.</p>
+</div>
+</div>
+<div data-plop-in="" class="choice__visual">
+<img src="assets/healio/paw.svg" loading="lazy" alt="Care for people, paws and the planet" data-plop-in-item="" class="choice__visual-img">
+</div>
+</div>
+<div class="choice__content">
+<div data-books-slider="" class="choice-slider">
+<div class="choice-slider__collection collection">
+<div data-books-slider-wrapper="" role="list" class="choice-slider__list collection-items"><div role="listitem" class="choice-slider__list-item care-impact-card"><article data-books-slider-item="" class="choice-slider__item"><div class="choice-slider__item-inner"><div class="choice-slider__item-bg" style="background:#8ef1fd"></div><div class="choice-slider__item-container"><div class="choice-slider__item-cover"><img src="assets/healio/bag.svg" alt="One tree, on us." class="choice-slider__item-img" loading="lazy"></div><h3 class="u-heading-s">One tree, on us.</h3><p class="u-paragraph-regular">Every 10 completed orders, we plant a tree for you.</p><button type="button" class="care-impact-link" data-care-action="rewards">See your little impact ↗</button></div><div class="choice-slider__year"><img class="choice-slider__year-img" src="assets/images/69d9056988fcfdf2b0a8bfa2_orange-eyecatcher.svg" alt=""><span class="care-impact-number"><strong>10</strong><small>ORDERS</small></span></div></div></article></div><div role="listitem" class="choice-slider__list-item care-impact-card"><article data-books-slider-item="" class="choice-slider__item"><div class="choice-slider__item-inner"><div class="choice-slider__item-bg" style="background:#feb6fa"></div><div class="choice-slider__item-container"><div class="choice-slider__item-cover"><img src="assets/healio/coin.svg" alt="Every ₹100 counts." class="choice-slider__item-img" loading="lazy"></div><h3 class="u-heading-s">Every ₹100 counts.</h3><p class="u-paragraph-regular">Earn 5 points for every ₹100 spent on completed orders.</p><button type="button" class="care-impact-link" data-care-action="rewards">See your little impact ↗</button></div><div class="choice-slider__year"><img class="choice-slider__year-img" src="assets/images/69d9056988fcfdf2b0a8bfa2_orange-eyecatcher.svg" alt=""><span class="care-impact-number"><strong>5</strong><small>POINTS</small></span></div></div></article></div><div role="listitem" class="choice-slider__list-item care-impact-card"><article data-books-slider-item="" class="choice-slider__item"><div class="choice-slider__item-inner"><div class="choice-slider__item-bg" style="background:#c0d43e"></div><div class="choice-slider__item-container"><div class="choice-slider__item-cover"><img src="assets/healio/tree.svg" alt="Grow another tree." class="choice-slider__item-img" loading="lazy"></div><h3 class="u-heading-s">Grow another tree.</h3><p class="u-paragraph-regular">Redeem 50 points to plant an extra tree. A little habit with roots.</p><button type="button" class="care-impact-link" data-care-action="rewards">See your little impact ↗</button></div><div class="choice-slider__year"><img class="choice-slider__year-img" src="assets/images/69d9056988fcfdf2b0a8bfa2_orange-eyecatcher.svg" alt=""><span class="care-impact-number"><strong>50</strong><small>POINTS</small></span></div></div></article></div><div role="listitem" class="choice-slider__list-item care-impact-card"><article data-books-slider-item="" class="choice-slider__item"><div class="choice-slider__item-inner"><div class="choice-slider__item-bg" style="background:#c2b4eb"></div><div class="choice-slider__item-container"><div class="choice-slider__item-cover"><img src="assets/healio/paw.svg" alt="Good grows together." class="choice-slider__item-img" loading="lazy"></div><h3 class="u-heading-s">Good grows together.</h3><p class="u-paragraph-regular">Track your order milestones, points and planting requests.</p><button type="button" class="care-impact-link" data-care-action="rewards">See your little impact ↗</button></div><div class="choice-slider__year"><img class="choice-slider__year-img" src="assets/images/69d9056988fcfdf2b0a8bfa2_orange-eyecatcher.svg" alt=""><span class="care-impact-number"><strong>1</strong><small>PLANET</small></span></div></div></article></div></div>
+</div>
+<div data-books-slider-controls="" class="books-slider__controls is--choice-slider">
+<button type="button" aria-label="Previous Slide" data-books-slider-control="" class="books-slider__controls-button is--previous">
+<span class="books-slider__controls-button-bg">
+</span>
+<span class="books-slider__controls-button-icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="books-slider__controls-button-icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</button>
+<button type="button" aria-label="Next Slide" data-books-slider-control="" class="books-slider__controls-button is--next">
+<span class="books-slider__controls-button-bg">
+</span>
+<span class="books-slider__controls-button-icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="books-slider__controls-button-icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</button>
+</div>
+</div>
+</div>
+<div class="care-impact-cta"><button type="button" data-care-action="rewards" data-button-alt="" class="button-alt "><span class="button-alt__text-wrap"><span class="button-alt__bg"></span><span class="button-alt__text-outer"><span data-button-alt-text="" class="button-alt__text">Calculate your impact</span></span></span><span class="button-alt__icon-wrap"><span class="button-alt__bg"></span><span class="button-alt__icon-outer"><svg viewBox="0 0 14 13" width="100%" aria-hidden="true"><path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor"></path></svg></span></span></button></div></div>
+</div>
+<div data-emoji-rain-container="" class="choice__emoji-rain-container">
+<div class="choice__single-rain-emoji is--hidden">
+<div class="choice__single-rain-emoji-image-party">
+</div>
+<div class="choice__single-rain-emoji-image-trophy">
+</div>
+</div>
+</div>
+</section>
+<section class="exclusive is--bg-white" id="doctor-care">
+<div class="exclusive__container">
+<div class="exclusive__inner">
+<div class="exclusive__header">
+<div class="exclusive__header-container u-container">
+<div class="exclusive__header-content">
+<h2 class="exclusive__title u-heading-l">A doctor. In 10 minutes.</h2>
+<p class="exclusive__paragraph u-paragraph-large">For a little expert guidance. For people and little paws.</p>
+</div>
+</div>
+</div>
+<div class="exclusive__content">
+<div data-exclusive-slider="" class="exclusive-slider">
+<div class="exclusive-slider__collection collection">
+<div data-exclusive-slider-wrapper="" role="list" class="exclusive-slider__list collection-items">
+<div role="listitem" class="exclusive-slider__list-item collection-item">
+<div data-exclusive-slider-item="" data-paint="37" class="exclusive-slider__item-outer">
+<article class="exclusive-slider__item">
+<div class="exclusive-slider__item-inner">
+<div class="books-slider__review"><span class="care-doctor-sticker"><strong>10</strong><small>MINUTE<br>GOAL</small></span></div>
+<div data-paint="38" class="books-slider__item-bg">
+<div data-paint="39" class="books-slider__item-bg-bottom is--exclusive-slider">
+</div>
+<div class="books-slider__item-cta is--exclusive-slider">
+<button data-button-alt="" data-wf--button-alt--variant="small" class="button-alt inline-link" type="button" data-care-action="doctor">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Request a doctor</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
+<div class="books-slider__item-container">
+<div class="books-slider__item-cover">
+<img src="assets/healio/doctor.svg" loading="lazy" alt="Healio doctor and veterinary appointment access" class="books-slider__item-img">
+</div>
+<div class="books-slider__item-content">
+<div class="books-slider__item-text">
+<h3 class="books-slider__item-title u-heading-s white-font">Someone in your corner.</h3>
+<div class="books-slider__item-paragraph u-paragraph-small white-font book-prose">Tell us who needs care. We’ll help prepare the next step with a human doctor or a veterinarian.</div>
+</div>
+<div class="books-slider__genre-list-wrap collection">
+<div role="list" class="books-slider__genre-list collection-items">
+<div role="listitem" class="books-slider__genre-list-item collection-item">
+<span data-paint="40" class="tag-small">
+<span class="tag-small__text">Human &amp; pet care</span>
+</span>
+</div>
+<div role="listitem" class="books-slider__genre-list-item collection-item">
+<span data-paint="41" class="tag-small">
+<span class="tag-small__text">10-minute goal</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div class="exclusive-slider__add-on">
+<div class="exclusive-slider__authors">
+<h3 class="exclusive-slider__authors-title">A little expert help</h3>
+<p data-exclusive-slider-authors="" class="exclusive-slider__authors-paragraph">Human doctor access · Veterinary care · Your symptoms, your questions · No endless waiting rooms</p>
+</div>
+<div class="exclusive-slider__quote-01">
+<p class="exclusive-slider__handwritten-text u-handwritten-regular">Someone to listen. A little reassurance.</p>
+</div>
+<div class="exclusive-slider__quote-02">
+<p class="exclusive-slider__handwritten-text u-handwritten-regular is--quote-02">For the ones you love. Two legs or four.</p>
+</div>
+<div class="exclusive-slider__emojis">
+<img src="assets/healio/mark-black.svg" loading="lazy" alt="Care" class="exclusive-slider__emoji-01">
+<img src="assets/healio/paw.svg" loading="lazy" alt="For humans and pets" class="exclusive-slider__emoji-02">
+<img src="assets/healio/tree.svg" loading="lazy" alt="Care that gives back" class="exclusive-slider__emoji-03">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-books-slider-controls="" class="books-slider__controls is--exclusive-slider">
+<button type="button" aria-label="Previous Slide" data-books-slider-control="" class="books-slider__controls-button is--previous">
+<span class="books-slider__controls-button-bg">
+</span>
+<span class="books-slider__controls-button-icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="books-slider__controls-button-icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</button>
+<button type="button" aria-label="Next Slide" data-books-slider-control="" class="books-slider__controls-button is--next">
+<span class="books-slider__controls-button-bg">
+</span>
+<span class="books-slider__controls-button-icon-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="books-slider__controls-button-icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer data-footer-parallax="" class="footer">
+<div data-footer-parallax-top="" class="footer__top">
+<div class="footer__container u-container">
+<div class="footer__top-inner">
+<div class="footer__top-nav">
+<div class="footer__logo"><span class="healio-logo">healio<span class="healio-logo-plus">+</span><small>HUMANS<br>&amp; PAWS</small></span></div>
+<div class="footer__cta">
+<button aria-label="Download on the App Store" data-wf--button-app-store--variant="outline" class="button is--app inline-link" type="button" data-care-action="human">For humans</button>
+<button aria-label="Get it on Google Play" data-wf--button-google-play--variant="outline" class="button is--app inline-link" type="button" data-care-action="pet">For little paws</button>
+</div>
+<div class="footer__socials">
+<button aria-label="Upload prescription" data-wf--button-social-instagram--variant="big" class="button-social inline-link" type="button" data-care-action="prescription"><span class="button-social__inner"><span class="button-social__bg"></span><span class="button-social__icon-outer"><span class="care-social-icon">Rx</span></span></span></button>
+<button aria-label="Your tree rewards" data-wf--button-social-tiktok--variant="big" class="button-social inline-link" type="button" data-care-action="rewards"><span class="button-social__inner"><span class="button-social__bg"></span><span class="button-social__icon-outer"><span class="care-social-icon">✚</span></span></span></button>
+</div>
+<div class="footer__links">
+<a href="#questions" class="footer__link inline-link">Care questions</a>
+<a href="#impact" class="footer__link inline-link">Our little impact</a>
+</div>
+</div>
+<div class="footer__top-form">
+<h3 class="footer__form-title u-heading-s">Stay in the care loop</h3>
+<div data-form-validate="" class="form native-form">
+<form id="care-newsletter" name="email-form" data-name="Email Form" class="form__group" data-wf-page-id="696173cc00865d1b386e4b14" data-wf-element-id="461a9122-06bb-975d-c38c-b9a3ed6aec66">
+<div data-validate="" class="form__field-group">
+<label for="email" class="form__label u-screen-reader">Email Address</label>
+<div class="form__field">
+<input class="form__input native-input" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="Email Address" aria-label="Email Address" type="email" id="EMAIL" required="">
+</div>
+</div>
+<div data-hover="" data-submit="" class="form__submit-group">
+<div data-button-alt="" class="button-alt">
+<span class="button-alt__text-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__text-outer">
+<span data-button-alt-text="" class="button-alt__text">Subscribe</span>
+</span>
+</span>
+<span class="button-alt__icon-wrap">
+<span class="button-alt__bg">
+</span>
+<span class="button-alt__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 14 13" fill="none" aria-hidden="true" class="button-alt__icon">
+<path d="M13.58 5.66v.845l-5.994 5.66-1.71-2.063a61.427 61.427 0 0 1 4.265-2.988l-.02-.078c-1.828.196-4.107.294-6.387.294H0V4.835h3.734c2.28 0 4.56.098 6.387.294l.02-.059a67.638 67.638 0 0 1-4.265-3.006L7.586 0l5.994 5.66Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</span>
+</div>
+<input type="submit" data-wait="Please wait..." class="form__submit native-button" value="Keep me posted">
+</div>
+<p class="care-newsletter-status" aria-live="polite"></p></form>
+<div class="success-message form-success">
+<div class="u-heading-xs white-font">Thank you, <br>you joined us!</div>
+</div>
+<div class="form-error">
+<div>Oops! Something went wrong while submitting the form.</div>
+</div>
+</div>
+</div>
+<div class="footer__mob-bottom">
+<div class="footer__mob-links">
+<a href="#home" class="footer__link inline-link">
+<span class="footer__bottom-text u-paragraph-extra-small">Terms of Service</span>
+</a>
+<a href="#home" class="footer__link inline-link">
+<span class="footer__bottom-text u-paragraph-extra-small">Privacy Policy</span>
+</a>
+</div>
+<div class="footer__mob-socials">
+<a aria-label="Go to Instagram" data-wf--button-social-instagram--variant="base" href="#home" class="button-social inline-link">
+<div class="button-social__inner">
+<span class="button-social__bg">
+</span>
+<span class="button-social__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="100%" class="button-social__icon">
+<path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</div>
+</a>
+<a aria-label="Go to TikTok" data-wf--button-social-tiktok--variant="base" href="#home" class="button-social inline-link">
+<div class="button-social__inner">
+<span class="button-social__bg">
+</span>
+<span class="button-social__icon-outer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="100%" class="button-social__icon">
+<path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z" fill="currentColor">
+</path>
+</svg>
+</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-footer-parallax-bottom="" class="footer__bottom">
+<div class="footer__container u-container">
+<div class="footer__bottom-inner">
+<div class="footer__bottom-copyright">
+<span class="footer__bottom-text u-paragraph-extra-small">© 2026 Healio. Every life. Every minute.</span>
+</div>
+<div class="footer__bottom-credit">
+<a href="https://www.dylanbrouwer.design/" target="_blank" class="footer__link inline-link">
+<span class="footer__bottom-text u-paragraph-extra-small">Design by Dylan</span>
+</a>
+<a href="https://www.futurethree.studio/" target="_blank" class="footer__link inline-link">
+<span class="footer__bottom-text u-paragraph-extra-small">Development by Future Three</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__visual">
+<div class="footer__visual-wrap">
+<img class="footer__visual-img" src="assets/healio/bag.svg" data-footer-parallax-visual="" alt="Healio care delivery bag" loading="lazy">
+</div>
+</div>
+<div data-footer-parallax-overlay="" class="footer__overlay">
+</div>
+</footer>
+</div>
 
-  <footer class="care-footer">
-    <div class="footer-top section-shell"><a href="#main-content" class="footer-brand">healio<span>+</span></a><p>For you. For your pets.<br>For every minute that matters.</p><button class="care-button secondary" type="button" data-open="doctor-panel">A little expert guidance ↗</button></div>
-    <nav class="section-shell" aria-label="Footer"><a href="#catalogue">Shop human &amp; pet care</a><a href="#behind">Our approach</a><a href="#inside">Inside the care</a><button class="intro-replay" type="button" id="intro-replay" aria-controls="healio-intro">Replay the opening ↗</button></nav>
-    <div class="footer-bottom section-shell"><p>© <span id="current-year">2026</span> Healio. Made with care.</p><p>Concept prototype. Prices are samples; delivery and consultations are not live.</p></div>
-  </footer>
-  <button class="doctor-rail" type="button" data-open="doctor-panel"><span class="doctor-rail-icon" aria-hidden="true">✚</span><span>Talk to a doctor<small>For humans &amp; pets</small></span><span aria-hidden="true">↗</span></button>
-  <div class="care-rail"><button type="button" data-open="prescription-panel" aria-label="Scan prescription">℞ <span>Prescription</span></button><button type="button" data-open="ambulance-panel" aria-label="Ambulance request">✚ <span>Ambulance</span></button><button type="button" data-open="chat-panel" aria-label="Chat with Healio assistant">✧ <span>Ask Healio</span></button></div>
-  <nav class="mobile-dock" aria-label="Shopping navigation"><a href="#main-content">⌂<span>Home</span></a><button type="button" data-action="search">⌕<span>Search</span></button><button type="button" data-open="cart-panel">♧<span>Bag <b data-cart-count>0</b></span></button><button type="button" data-open="chat-panel">✧<span>Help</span></button></nav>
-  <div class="toast" id="app-toast" role="status" aria-live="polite"></div>
 
-  <dialog class="side-panel" id="cart-panel" aria-labelledby="cart-title">
-    <header class="panel-header"><div><p class="eyebrow">A LITTLE CLOSER TO CARE</p><h2 id="cart-title">Your care bag <span data-cart-count>0</span></h2></div><button class="close-button" type="button" data-close aria-label="Close shopping cart">×</button></header>
-    <div id="cart-content" class="panel-content"></div>
-    <form id="checkout-form" class="panel-content checkout-form" hidden>
-      <button class="text-link" type="button" data-action="back-to-bag">← Back to your bag</button><h3>Where should care find you?</h3><p class="form-intro">Prepare a demo order. No payment is taken and no real order is placed.</p>
-      <label>Full name<input name="name" autocomplete="name" required maxlength="60"></label>
-      <div class="form-row"><label>Mobile number<input name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" pattern="[0-9]{10}" placeholder="10-digit mobile" required></label><label>Pincode<input name="pincode" inputmode="numeric" autocomplete="postal-code" pattern="[1-9][0-9]{5}" placeholder="6-digit pincode" required></label></div>
-      <label>Delivery address<textarea name="address" autocomplete="street-address" required minlength="10" maxlength="350" rows="3"></textarea></label>
-      <label id="checkout-rx-field" hidden>Veterinary prescription<input name="prescription" type="file" accept="image/jpeg,image/png,application/pdf"><small>Required for items marked “Vet Rx”. JPEG, PNG or PDF, up to 5 MB. Kept in this page only.</small></label>
-      <label class="check-label"><input name="consent" type="checkbox" required><span>I understand this is a demo order and the shown prices are illustrative.</span></label>
-      <p class="form-error" id="checkout-error" role="alert"></p><button class="care-button" type="submit">Prepare demo order ↗</button>
-    </form>
-    <div id="order-confirmation" class="panel-content confirmation" hidden></div>
-  </dialog>
 
-  <dialog class="side-panel doctor-panel" id="doctor-panel" aria-labelledby="doctor-title">
-    <header class="panel-header"><div><p class="eyebrow">THE NEXT STEP, TOGETHER</p><h2 id="doctor-title">Let’s find your care.</h2></div><button class="close-button" type="button" data-close aria-label="Close doctor request">×</button></header>
-    <form id="doctor-form" class="panel-content">
-      <div class="consult-banner"><span aria-hidden="true">10</span><div><strong>Minutes is the assignment goal.</strong><p>Start with a few details about who needs care.</p></div></div>
-      <fieldset class="consult-type"><legend>Who is this for?</legend><label><input type="radio" name="care" value="human" checked><span>✚ A person</span></label><label><input type="radio" name="care" value="pet"><span>♧ A pet</span></label></fieldset>
-      <label><span id="patient-name-label">Patient name</span><input name="patient" required maxlength="60" autocomplete="off"></label>
-      <div class="form-row"><label>Age in years<input name="age" type="number" min="0" max="120" step="0.1" required></label><label>Mobile number<input name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" pattern="[0-9]{10}" placeholder="10-digit mobile" required></label></div>
-      <div class="pet-fields" id="doctor-pet-fields" hidden><div class="form-row"><label>Pet species<select name="species"><option value="">Choose species</option><option value="Dog">Dog</option><option value="Cat">Cat</option><option value="Other companion animal">Other companion animal</option></select></label><label>Pet parent’s name<input name="owner" maxlength="60" autocomplete="name"></label></div></div>
-      <div class="form-row"><label>Care team<select name="specialty" id="doctor-specialty"><option>General physician</option><option>Family care physician</option></select></label><label>Pincode<input name="pincode" inputmode="numeric" pattern="[1-9][0-9]{5}" placeholder="6-digit pincode" required></label></div>
-      <label>What would you like help with?<textarea name="concern" rows="4" required minlength="10" maxlength="1000" placeholder="Tell us a little about the concern…"></textarea></label>
-      <label class="check-label"><input name="consent" type="checkbox" required><span>I understand this prepares a demo request. No live clinician is contacted.</span></label>
-      <p class="form-error" id="doctor-error" role="alert"></p><button type="submit" class="care-button">Prepare consultation request ↗</button><p class="form-footnote">This form is for a concept demonstration. For urgent or emergency concerns, seek immediate local care.</p>
-    </form>
-    <div id="doctor-confirmation" class="panel-content confirmation" hidden></div>
-  </dialog>
 
-  <dialog class="side-panel mobile-nav-drawer" id="mobile-panel" aria-labelledby="mobile-title"><header class="panel-header"><h2 id="mobile-title">Explore Healio</h2><button class="close-button" type="button" data-close aria-label="Close navigation">×</button></header><nav class="panel-content mobile-links" aria-label="Mobile navigation"><a href="#catalogue" data-close>Shop essentials ↗</a><a href="#features" data-close>Our approach ↗</a><a href="#behind" data-close>Care &amp; trust ↗</a><button type="button" data-open="doctor-panel">Talk to a doctor ↗</button><button type="button" data-open="cart-panel">Your care bag ↗</button></nav></dialog>
-<dialog class="side-panel" id="chat-panel" aria-labelledby="chat-title"><header class="panel-header"><div><p class="eyebrow">A LITTLE HELP, RIGHT HERE</p><h2 id="chat-title">Ask Healio.</h2></div><button class="close-button" type="button" data-close aria-label="Close chat">×</button></header><div class="panel-content ai-content"><p class="form-intro">Your AI shopping guide. For product and service questions, not diagnosis or dosing. Messages are sent to Google Gemini.</p><div id="chat-messages" class="chat-messages" role="log" aria-live="polite"><p class="chat-bubble">Hi, I’m Healio’s care shelf assistant. What can I help you find?</p></div><form id="chat-form"><label for="chat-question">Your question</label><div class="chat-input"><input id="chat-question" maxlength="1500" required placeholder="Find vitamins, pet care…" autocomplete="off"><button class="care-button" type="submit" aria-label="Send message">↗</button></div></form><p id="chat-error" class="form-error" role="alert"></p></div></dialog>
-<dialog class="side-panel" id="prescription-panel" aria-labelledby="rx-title"><header class="panel-header"><div><p class="eyebrow">FROM PAPER TO YOUR CARE BAG</p><h2 id="rx-title">Read. Review. Ready.</h2></div><button class="close-button" type="button" data-close aria-label="Close prescription reader">×</button></header><div class="panel-content"><form id="rx-form"><p class="form-intro">Upload your doctor’s prescription. We’ll read the medicine names and written quantities, then look for exact matches in our demo shelf.</p><label>Care for<select name="audience"><option value="human">A person</option><option value="pet">A pet</option></select></label><label class="upload-zone">℞ &nbsp; Add a prescription<input name="file" type="file" accept="image/jpeg,image/png,application/pdf" required><small>Clear photo or PDF · Up to 3 MB</small></label><label class="check-label"><input name="consent" type="checkbox" required><span>I agree to send this prescription to Google Gemini for reading. Files aren’t saved by this app. Remove personal details you don’t need to share.</span></label><button type="submit" class="care-button">Read prescription ↗</button><p class="form-footnote">AI can misread handwriting. Check every name, strength and quantity against the original. This does not replace pharmacist review.</p></form><p id="rx-error" class="form-error" role="alert"></p><div id="rx-results" hidden><h3>Your prescription, unpacked.</h3><p>Only exact catalogue matches can be selected. Quantities are packs; never doses.</p><div id="rx-items"></div><p id="rx-notes"></p><label class="check-label"><input id="rx-reviewed" type="checkbox"><span>I checked the names, strengths and pack quantities against my prescription.</span></label><button id="rx-add" type="button" class="care-button">Add selected matches to bag ↗</button><p id="rx-add-status" role="status"></p></div></div></dialog>
-<dialog class="side-panel" id="ambulance-panel" aria-labelledby="ambulance-title"><header class="panel-header"><div><p class="eyebrow">WHEN EVERY MINUTE MATTERS</p><h2 id="ambulance-title">Help on the way.<br>That’s the ambition.</h2></div><button class="close-button" type="button" data-close aria-label="Close ambulance request">×</button></header><div class="panel-content"><a class="emergency-call" href="tel:112">Emergency now? Call 112 ↗</a><p class="form-intro">In India, 112 connects emergency assistance, including ambulance services. <a href="https://112.gov.in/faq" target="_blank" rel="noopener">About 112 ↗</a></p><div class="consult-banner"><span>10</span><div><strong>Minutes is our arrival goal.</strong><p>Concept only. No ambulance can be dispatched here. Don’t wait for this form in an emergency.</p></div></div><form id="ambulance-form"><label>Patient name<input name="patient" required minlength="2" maxlength="60"></label><label>Contact number<input name="phone" type="tel" pattern="[0-9]{10}" inputmode="numeric" placeholder="10-digit mobile" required></label><label>Pickup address &amp; landmark<textarea name="address" required minlength="10" maxlength="350" rows="3"></textarea></label><label>Pincode<input name="pincode" pattern="[1-9][0-9]{5}" inputmode="numeric" required></label><label class="check-label"><input type="checkbox" required><span>I understand this is a demo. No ambulance or emergency team is contacted.</span></label><button class="care-button" type="submit">Prepare demo request ↗</button></form><div id="ambulance-result" role="status" hidden></div></div></dialog>
-</body>
-</html>
+
+
+
+
+
+
+
+<!-- Staging URL -->
+
+<dialog id="care-dialog" class="care-dialog" aria-labelledby="care-dialog-title"><button type="button" class="care-dialog-close" aria-label="Close dialog" data-care-close="">×</button><div id="care-dialog-content"></div></dialog><button type="button" class="care-chat-launcher" data-care-action="chat" aria-label="Open Healio chatbot"><span class="care-chat-launcher-icon" aria-hidden="true">✳</span><span>Ask Healio</span><span aria-hidden="true">↗</span></button><div class="care-toast" id="care-toast" role="status" aria-live="polite"></div></body></html>

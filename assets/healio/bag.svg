@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" fill="none"><defs><linearGradient id="b" x1="0" x2="1"><stop stop-color="#121212"/><stop offset=".12" stop-color="#414141"/><stop offset=".16" stop-color="#131313"/><stop offset="1" stop-color="#262626"/></linearGradient></defs>
+<path d="M150 130V91C150 12 450 12 450 91v39" stroke="#121212" stroke-width="28"/><path d="M65 111 535 103 570 637 30 637z" fill="url(#b)" stroke="#101010" stroke-width="7"/>
+<path d="M81 125 517 119 550 616 48 616z" fill="#ff008c"/>
+<path d="M63 274c113-93 147 51 261 1s64-137 201-94l9 111c-100-37-81 77-210 61S170 332 59 394z" fill="#3b308f"/>
+<path d="M73 153c51-28 72 87 160 53s61-74 139-65 77 37 145 4v74c-91 28-117-24-168 5s-104 67-159 14S120 214 77 241z" fill="#ffdbfd"/>
+<path d="M52 436c69-85 178-82 220-17s99 55 141 17 86-62 125-28l7 113c-78-54-82 81-207 34s-133-125-203-56-47 78-89 55z" fill="#111"/>
+<path d="M280 491c62-45 63 64 155 39s81-24 110-7l6 91-294 4c-19-29-13-91 23-127z" fill="#faed8f"/>
+<circle cx="199" cy="331" r="93" fill="#111"/><path d="M185 280h29v37h37v29h-37v37h-29v-37h-37v-29h37z" fill="white"/>
+<text x="199" y="409" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="25" font-weight="900">healio</text>
+<path d="m31 638 539-1-22 22H55z" fill="#111"/><text x="436" y="594" fill="#111" font-family="Arial,sans-serif" font-size="16" font-weight="700">A LITTLE CARE.</text></svg>
